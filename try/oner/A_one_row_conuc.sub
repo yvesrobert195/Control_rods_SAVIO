@@ -10,7 +10,7 @@
 
 #SBATCH --time=400:00:00
 
-#SBATCH --nodes=6
+#SBATCH --nodes=8
 
 #SBATCH --ntasks-per-node=1
 
@@ -32,4 +32,4 @@
 # run command
 setenv OMP_NUM_THREAD 20
 
-mpirun -np 6 --map-by ppr:1:node:pe=20 sss2 -omp 20 A_one_row
+mpirun -np 8 --map-by ppr:1:node:pe=20 sss2 -omp 20 A_one_row

@@ -1172,15 +1172,15 @@ det AssemblyPowerAxial7 n dl 7 dr -8 void
 det AssemblyPowerAxial8 n dl 8 dr -8 void
 det AssemblyPowerAxial9 n dl 9 dr -8 void
 
-%det AssemblyGammaPowerAxial1 p dl 1 dr -12 void
-%det AssemblyGammaPowerAxial2 p dl 2 dr -12 void
-%det AssemblyGammaPowerAxial3 p dl 3 dr -12 void
-%det AssemblyGammaPowerAxial4 p dl 4 dr -12 void
-%det AssemblyGammaPowerAxial5 p dl 5 dr -12 void
-%det AssemblyGammaPowerAxial6 p dl 6 dr -12 void
-%det AssemblyGammaPowerAxial7 p dl 7 dr -12 void
-%det AssemblyGammaPowerAxial8 p dl 8 dr -12 void
-%det AssemblyGammaPowerAxial9 p dl 9 dr -12 void
+det AssemblyGammaPowerAxial1 p dl 1 dr -12 void
+det AssemblyGammaPowerAxial2 p dl 2 dr -12 void
+det AssemblyGammaPowerAxial3 p dl 3 dr -12 void
+det AssemblyGammaPowerAxial4 p dl 4 dr -12 void
+det AssemblyGammaPowerAxial5 p dl 5 dr -12 void
+det AssemblyGammaPowerAxial6 p dl 6 dr -12 void
+det AssemblyGammaPowerAxial7 p dl 7 dr -12 void
+det AssemblyGammaPowerAxial8 p dl 8 dr -12 void
+det AssemblyGammaPowerAxial9 p dl 9 dr -12 void
 
 det Batch1Energy n dm Batch1Axial5 de spectrumGrid
 det Batch2Energy n dm Batch2Axial5 de spectrumGrid
