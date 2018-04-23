@@ -40,7 +40,6 @@ cell belowcorecoolantcell 0 belowcorecoolantmat -radialsystem systembottom -lowe
 % ################################################################################### //// ######## //// ####### 
 % --- Duct
 cell Control_non_inserted 0000 CR_non_inserted -assembly
-cell Control_inserted 0001 CR_assembly -assembly
 
 
 % --- assembly cells
@@ -1172,15 +1171,15 @@ det AssemblyPowerAxial7 n dl 7 dr -8 void
 det AssemblyPowerAxial8 n dl 8 dr -8 void
 det AssemblyPowerAxial9 n dl 9 dr -8 void
 
-%det AssemblyGammaPowerAxial1 p dl 1 dr -12 void
-%det AssemblyGammaPowerAxial2 p dl 2 dr -12 void
-%det AssemblyGammaPowerAxial3 p dl 3 dr -12 void
-%det AssemblyGammaPowerAxial4 p dl 4 dr -12 void
-%det AssemblyGammaPowerAxial5 p dl 5 dr -12 void
-%det AssemblyGammaPowerAxial6 p dl 6 dr -12 void
-%det AssemblyGammaPowerAxial7 p dl 7 dr -12 void
-%det AssemblyGammaPowerAxial8 p dl 8 dr -12 void
-%det AssemblyGammaPowerAxial9 p dl 9 dr -12 void
+det AssemblyGammaPowerAxial1 p dl 1 dr -12 void
+det AssemblyGammaPowerAxial2 p dl 2 dr -12 void
+det AssemblyGammaPowerAxial3 p dl 3 dr -12 void
+det AssemblyGammaPowerAxial4 p dl 4 dr -12 void
+det AssemblyGammaPowerAxial5 p dl 5 dr -12 void
+det AssemblyGammaPowerAxial6 p dl 6 dr -12 void
+det AssemblyGammaPowerAxial7 p dl 7 dr -12 void
+det AssemblyGammaPowerAxial8 p dl 8 dr -12 void
+det AssemblyGammaPowerAxial9 p dl 9 dr -12 void
 
 det Batch1Energy n dm Batch1Axial5 de spectrumGrid
 det Batch2Energy n dm Batch2Axial5 de spectrumGrid
@@ -1197,17 +1196,17 @@ ene spectrumGrid 3 1000 1E-4 1E1
 % ################################################################################### //// ######## //// #######
 
 % --- turn on coupled neutron/photon transport
-%set ngamma 2
+set ngamma 2
 
 % --- include material definitions in separate file
 include "A_nonfuel"    
 include "A_mburn"
 
 % --- set data library locations
-set acelib "/global/home/groups/co_nuclear/serpent/xsdata_2/endfb7/sss_endfb7u.xsdata" %"/global/scratch/ckeckler/photon.xsdata"
+set acelib "/global/home/groups/co_nuclear/serpent/xsdata_2/endfb7/sss_endfb7u.xsdata" "/global/scratch/co_nuclear/sss_photon_data/photon.xsdata"
 set declib "/global/home/groups/co_nuclear/serpent/xsdata_2/endfb7/sss_endfb7.dec"
 set nfylib "/global/home/groups/co_nuclear/serpent/xsdata_2/endfb7/sss_endfb7.nfy"
-%set pdatadir "/global/home/groups/co_nuclear/serpent/photon_data"
+set pdatadir "/global/home/groups/co_nuclear/serpent/photon_data"
 
 % --- set burn power
 set power 1400000000.0
@@ -1251,16 +1250,16 @@ ene pertgrid 1 1E-10 1E3
 %set xsplot 1000 1E-3 1E1
 
 % Test plot
-plot 3 1000 1000 0.00000
-plot 3 1000 1000 5.0000
-plot 3 1000 1000 38.333
-plot 3 1000 1000 71.667
-plot 3 1000 1000 105.000
-plot 3 1000 1000 138.333
-plot 3 1000 1000 171.667
-plot 3 1000 1000 205.000
-plot 3 1000 1000 238.333
-plot 3 1000 1000 271.667
-plot 3 1000 1000 305.000
-plot 3 1000 1000 315.000
-plot 3 1000 1000 415.000
+%plot 3 1000 1000 0.00000
+%plot 3 1000 1000 5.0000
+%plot 3 1000 1000 38.333
+%plot 3 1000 1000 71.667
+%plot 3 1000 1000 105.000
+%plot 3 1000 1000 138.333
+%plot 3 1000 1000 171.667
+%plot 3 1000 1000 205.000
+%plot 3 1000 1000 238.333
+%plot 3 1000 1000 271.667
+%plot 3 1000 1000 305.000
+%plot 3 1000 1000 315.000
+%plot 3 1000 1000 415.000

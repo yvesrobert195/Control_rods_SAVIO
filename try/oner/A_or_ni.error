@@ -1,0 +1,13 @@
+[n0024:83700] *** Process received signal ***
+[n0024:83700] Signal: Segmentation fault (11)
+[n0024:83700] Signal code: Address not mapped (1)
+[n0024:83700] Failing at address: (nil)
+[n0024:83700] [ 0] /lib64/libpthread.so.0(+0xf5e0)[0x2b07ebe695e0]
+[n0024:83700] [ 1] sss2[0x40749c]
+[n0024:83700] [ 2] sss2[0x4cd893]
+[n0024:83700] [ 3] sss2[0x51d674]
+[n0024:83700] [ 4] sss2[0x4033a6]
+[n0024:83700] [ 5] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b07ec097c05]
+[n0024:83700] [ 6] sss2[0x403ab6]
+[n0024:83700] *** End of error message ***
+/var/spool/slurmd/job2932062/slurm_script: line 36: 83700 Segmentation fault      sss2 A_one_row_ni

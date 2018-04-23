@@ -1,0 +1,36 @@
+#!/bin/sh
+
+#SBATCH --job-name=A_or_ni
+
+#SBATCH --output=A_or_ni.o
+
+#SBATCH --error=A_or_ni.error
+
+#SBATCH --partition=savio
+
+#SBATCH --time=400:00:00
+
+#SBATCH --nodes=1
+
+#Sbatch --ntasks-per-node=1
+
+#SBATCH--cpus-per-task=20
+
+# QoS: 
+
+#SBATCH --qos=nuclear_savio_normal
+
+#
+
+# Account:
+
+#SBATCH -A co_nuclear
+
+#SBATCH --mail-user=yves.robert@insa-lyon.fr
+#SBATCH --mail-type=all
+
+# run command
+#setenv OMP_NUM_THREAD 5
+#mkdir -p /global/scratch/$USER/$SLURM_JOB_ID
+#mpirun -np 12 --map-by ppr:4:node:pe=5 sss2 -omp 5 A_one_row_ni
+sss2 A_one_row_ni
