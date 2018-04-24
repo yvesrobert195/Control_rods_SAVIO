@@ -1,16 +1,16 @@
 #!/bin/sh
 
-#SBATCH --job-name=A_hex
+#SBATCH --job-name=A_two_rows
 
-#SBATCH --output=A.o
+#SBATCH --output=A_two_rows.o
 
-#SBATCH --error=A.error
+#SBATCH --error=A_two_rows.error
 
 #SBATCH --partition=savio
 
 #SBATCH --time=400:00:00
 
-#SBATCH --nodes=4
+#SBATCH --nodes=8
 
 #SBATCH --ntasks-per-node=1
 
@@ -32,4 +32,4 @@
 # run command
 setenv OMP_NUM_THREAD 20
 
-mpirun -np 4 --map-by ppr:1:node:pe=20 sss2 -omp 20 A
+mpirun -np 8 --map-by ppr:1:node:pe=20 sss2 -omp 20 A_two_rows
