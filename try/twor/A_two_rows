@@ -39,8 +39,8 @@ cell belowcorecoolantcell 0 belowcorecoolantmat -radialsystem systembottom -lowe
 % ##################### Core cells for filling lattices ############################# //// ######## //// ####### 
 % ################################################################################### //// ######## //// ####### 
 % --- Duct
-cell Control_non_inserted 0000 Control_non_inserted -assembly
-cell Control_inserted 0001 Control_inserted -assembly
+%cell Control_non_inserted 0000 Control_non_inserted -assembly
+cell Control_inserted 0000 CR_assembly -assembly
 
 % --- assembly cells
 cell Batch1Axial1 0101 Batch1Axial1 -assembly  % Batch: 1/7, Axial: 1/9
