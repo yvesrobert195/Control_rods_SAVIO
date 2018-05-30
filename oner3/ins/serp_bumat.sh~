@@ -1,0 +1,16 @@
+#!/bin/bash
+
+for i in {0..3..1}
+do
+    echo "Test #$i"
+    sed -i "/T_out_bar_tol = /c\T_out_bar_tol = $i;" /global/home/users/yvesrobert/OrificeOpt_folder/orificing/matlab/orificeInput.m
+    sed -i "/job-name/c\#SBATCH --job-name=gam$i" /global/home/users/yvesrobert/OrificeOpt_folder/test_gamma/test.sub
+    sed -i "/--output=/c\#SBATCH --output=bnb_tol$i.o" /global/home/users/yvesrobert/OrificeOpt_folder/test_gamma/test.sub
+    sed -i "/--error=/c\#SBATCH --error=bnb_tol$i.error" /global/home/users/yvesrobert/OrificeOpt_folder/test_gamma/test.sub
+    sed -i "/write /c\write bnb_tol_$i.sol" /global/home/users/yvesrobert/OrificeOpt_folder/test_gamma/mycplexcommands
+
+    cd /global/home/users/yvesrobert/OrificeOpt_folder/orificing/matlab/
+    srun -A fc_neutronics -p savio2 --qos=savio_normal -t 72:00:00 matlab -nodisplay -nosplash -nodesktop -nojvm -r "orificeOpt;quit"
+    cd /global/home/users/yvesrobert/OrificeOpt_folder/test_gamma
+    sbatch test.sub
+done

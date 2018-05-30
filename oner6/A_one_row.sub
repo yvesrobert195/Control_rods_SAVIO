@@ -1,0 +1,35 @@
+#!/bin/sh
+
+#SBATCH --job-name=A_or
+
+#SBATCH --output=A_or.o
+
+#SBATCH --error=A_or.error
+
+#SBATCH --partition=savio2
+
+#SBATCH --time=72:00:00
+
+#SBATCH --nodes=6
+
+#SBATCH --ntasks-per-node=1
+
+#SBATCH--cpus-per-task=24
+
+# QoS: savio_normal
+
+#SBATCH --qos=savio_normal
+
+#
+
+# Account:
+
+#SBATCH -A fc_neutronics
+
+#SBATCH --mail-user=yves.robert@insa-lyon.fr
+#SBATCH --mail-type=all
+
+# run command
+setenv OMP_NUM_THREAD 24
+
+mpirun -np 6 --map-by ppr:1:node:pe=24 sss2 -omp 24 A_one_row

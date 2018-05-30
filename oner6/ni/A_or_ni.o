@@ -1,0 +1,3035 @@
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.29 (June 12, 2017) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+ - Compiled May  7 2018 13:34:10
+
+ - MPI Parallel calculation mode available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path not set
+
+Begin calculation on Mon May  7 13:44:32 2018
+
+Reading input file "A_one_row_ni"...
+Reading input file "A_nonfuel"...
+Reading input file "A_mburn"...
+
+ ***** Warning: Serpent 1 input option stabcut on line 1219 of file A_one_row_ni not used
+
+
+ ***** Warning: Serpent 1 input option xsfcut on line 1221 of file A_one_row_ni not used
+
+
+Checking duplicate input definitions...
+OK.
+
+Dividing burnable materials...
+OK.
+
+Creating geometry...
+OK.
+
+Counting geometry zones...
+
+The geometry consists of 3 levels:
+
+Level 0 size: max 18 zones
+Level 1 size: max 1225 zones
+Level 2 size: max 2 zones
+
+Processing cells...
+OK.
+
+Linking materials to geometry...
+OK.
+
+Counting cells...
+OK.
+
+Reading ACE directory files...
+OK.
+
+Reading radioactive decay data files...
+OK.
+
+Reading neutron-induced fission yields...
+OK.
+
+Adding nuclides in material Batch7Axial1...
+
+Nuclide  92235.06c -- uranium 235 at 600K (U-235)
+Nuclide  92238.06c -- uranium 238 at 600K (U-238)
+Nuclide  11023.06c -- sodium 23 at 600K (Na-23)
+Nuclide  28058.06c -- nickel 58 at 600K (Ni-58)
+Nuclide  28060.06c -- nickel 60 at 600K (Ni-60)
+Nuclide  28061.06c -- nickel 61 at 600K (Ni-61)
+Nuclide  28062.06c -- nickel 62 at 600K (Ni-62)
+Nuclide  28064.06c -- nickel 64 at 600K (Ni-64)
+Nuclide  24050.06c -- chromium 50 at 600K (Cr-50)
+Nuclide  24052.06c -- chromium 52 at 600K (Cr-52)
+Nuclide  24053.06c -- chromium 53 at 600K (Cr-53)
+Nuclide  24054.06c -- chromium 54 at 600K (Cr-54)
+Nuclide  25055.06c -- manganese 55 at 600K (Mn-55)
+Nuclide  42092.06c -- molybdenum 92 at 600K (Mo-92)
+Nuclide  42094.06c -- molybdenum 94 at 600K (Mo-94)
+Nuclide  42095.06c -- molybdenum 95 at 600K (Mo-95)
+Nuclide  42096.06c -- molybdenum 96 at 600K (Mo-96)
+Nuclide  42097.06c -- molybdenum 97 at 600K (Mo-97)
+Nuclide  42098.06c -- molybdenum 98 at 600K (Mo-98)
+Nuclide  42100.06c -- molybdenum 100 at 600K (Mo-100)
+Nuclide  14028.06c -- silicon 28 at 600K (Si-28)
+Nuclide  14029.06c -- silicon 29 at 600K (Si-29)
+Nuclide  14030.06c -- silicon 30 at 600K (Si-30)
+Nuclide  74000.06c -- natural tungsten at 600K (W-nat)
+Nuclide  23000.06c -- natural vanadium at 600K (V-nat)
+Nuclide   6000.06c -- natural carbon at 600K (C-nat)
+Nuclide  26054.06c -- iron 54 at 600K (Fe-54)
+Nuclide  26056.06c -- iron 56 at 600K (Fe-56)
+Nuclide  26057.06c -- iron 57 at 600K (Fe-57)
+Nuclide  26058.06c -- iron 58 at 600K (Fe-58)
+
+Adding nuclides in material Batch7Axial2...
+
+Adding nuclides in material Batch7Axial3...
+
+Adding nuclides in material Batch7Axial4...
+
+Adding nuclides in material Batch7Axial5...
+
+Adding nuclides in material Batch7Axial6...
+
+Adding nuclides in material Batch7Axial7...
+
+Adding nuclides in material Batch7Axial8...
+
+Adding nuclides in material Batch7Axial9...
+
+Adding nuclides in material Batch3Axial1...
+
+Nuclide  90233.06c -- thorium 233 at 600K (Th-233)
+Nuclide  91233.06c -- protactinium 233 at 600K (Pa-233)
+Nuclide  92233.06c -- uranium 233 at 600K (U-233)
+Nuclide  90234.06c -- thorium 234 at 600K (Th-234)
+Nuclide  92234.06c -- uranium 234 at 600K (U-234)
+Nuclide  93235.06c -- neptunium 235 at 600K (Np-235)
+Nuclide  92236.06c -- uranium 236 at 600K (U-236)
+Nuclide  93236.06c -- neptunium 236 at 600K (Np-236)
+Nuclide  94236.06c -- plutonium 236 at 600K (Pu-236)
+Nuclide  92237.06c -- uranium 237 at 600K (U-237)
+Nuclide  93237.06c -- neptunium 237 at 600K (Np-237)
+Nuclide  94237.06c -- plutonium 237 at 600K (Pu-237)
+Nuclide  93238.06c -- neptunium 238 at 600K (Np-238)
+Nuclide  94238.06c -- plutonium 238 at 600K (Pu-238)
+Nuclide  92239.06c -- uranium 239 at 600K (U-239)
+Nuclide  93239.06c -- neptunium 239 at 600K (Np-239)
+Nuclide  94239.06c -- plutonium 239 at 600K (Pu-239)
+Nuclide  92240.06c -- uranium 240 at 600K (U-240)
+Nuclide  94240.06c -- plutonium 240 at 600K (Pu-240)
+Nuclide  96240.06c -- curium 240 at 600K (Cm-240)
+Nuclide  92241.06c -- uranium 241 at 600K (U-241)
+Nuclide  94241.06c -- plutonium 241 at 600K (Pu-241)
+Nuclide  95241.06c -- americium 241 at 600K (Am-241)
+Nuclide  96241.06c -- curium 241 at 600K (Cm-241)
+Nuclide  94242.06c -- plutonium 242 at 600K (Pu-242)
+Nuclide  95242.06c -- americium 242 at 600K (Am-242)
+Nuclide  95342.06c -- americium 242m at 600K (Am-242m)
+Nuclide  96242.06c -- curium 242 at 600K (Cm-242)
+Nuclide  94243.06c -- plutonium 243 at 600K (Pu-243)
+Nuclide  95243.06c -- americium 243 at 600K (Am-243)
+Nuclide  96243.06c -- curium 243 at 600K (Cm-243)
+Nuclide  94244.06c -- plutonium 244 at 600K (Pu-244)
+Nuclide  95244.06c -- americium 244 at 600K (Am-244)
+Nuclide  95344.06c -- americium 244m at 600K (Am-244m)
+Nuclide  96244.06c -- curium 244 at 600K (Cm-244)
+Nuclide  96245.06c -- curium 245 at 600K (Cm-245)
+Nuclide  27058.06c -- cobalt 58 at 600K (Co-58)
+Nuclide  27059.06c -- cobalt 59 at 600K (Co-59)
+Nuclide  28059.06c -- nickel 59 at 600K (Ni-59)
+Nuclide  29063.06c -- copper 63 at 600K (Cu-63)
+Nuclide  30064.06c -- zinc 64 at 600K (Zn-64)
+Nuclide  29065.06c -- copper 65 at 600K (Cu-65)
+Nuclide  31069.06c -- gallium 69 at 600K (Ga-69)
+Nuclide  32070.06c -- germanium 70 at 600K (Ge-70)
+Nuclide  31071.06c -- gallium 71 at 600K (Ga-71)
+Nuclide  32072.06c -- germanium 72 at 600K (Ge-72)
+Nuclide  32073.06c -- germanium 73 at 600K (Ge-73)
+Nuclide  32074.06c -- germanium 74 at 600K (Ge-74)
+Nuclide  33074.06c -- arsenic 74 at 600K (As-74)
+Nuclide  34074.06c -- selenium 74 at 600K (Se-74)
+Nuclide  33075.06c -- arsenic 75 at 600K (As-75)
+Nuclide  32076.06c -- germanium 76 at 600K (Ge-76)
+Nuclide  34076.06c -- selenium 76 at 600K (Se-76)
+Nuclide  34077.06c -- selenium 77 at 600K (Se-77)
+Nuclide  34078.06c -- selenium 78 at 600K (Se-78)
+Nuclide  36078.06c -- krypton 78 at 600K (Kr-78)
+Nuclide  34079.06c -- selenium 79 at 600K (Se-79)
+Nuclide  35079.06c -- bromine 79 at 600K (Br-79)
+Nuclide  34080.06c -- selenium 80 at 600K (Se-80)
+Nuclide  36080.06c -- krypton 80 at 600K (Kr-80)
+Nuclide  35081.06c -- bromine 81 at 600K (Br-81)
+Nuclide  34082.06c -- selenium 82 at 600K (Se-82)
+Nuclide  36082.06c -- krypton 82 at 600K (Kr-82)
+Nuclide  36083.06c -- krypton 83 at 600K (Kr-83)
+Nuclide  36084.06c -- krypton 84 at 600K (Kr-84)
+Nuclide  38084.06c -- strontium 84 at 600K (Sr-84)
+Nuclide  36085.06c -- krypton 85 at 600K (Kr-85)
+Nuclide  37085.06c -- rubidium 85 at 600K (Rb-85)
+Nuclide  36086.06c -- krypton 86 at 600K (Kr-86)
+Nuclide  37086.06c -- rubidium 86 at 600K (Rb-86)
+Nuclide  38086.06c -- strontium 86 at 600K (Sr-86)
+Nuclide  37087.06c -- rubidium 87 at 600K (Rb-87)
+Nuclide  38087.06c -- strontium 87 at 600K (Sr-87)
+Nuclide  38088.06c -- strontium 88 at 600K (Sr-88)
+Nuclide  38089.06c -- strontium 89 at 600K (Sr-89)
+Nuclide  39089.06c -- yttrium 89 at 600K (Y-89)
+Nuclide  38090.06c -- strontium 90 at 600K (Sr-90)
+Nuclide  39090.06c -- yttrium 90 at 600K (Y-90)
+Nuclide  40090.06c -- zirconium 90 at 600K (Zr-90)
+Nuclide  39091.06c -- yttrium 91 at 600K (Y-91)
+Nuclide  40091.06c -- zirconium 91 at 600K (Zr-91)
+Nuclide  40092.06c -- zirconium 92 at 600K (Zr-92)
+Nuclide  40093.06c -- zirconium 93 at 600K (Zr-93)
+Nuclide  41093.06c -- niobium 93 at 600K (Nb-93)
+Nuclide  40094.06c -- zirconium 94 at 600K (Zr-94)
+Nuclide  41094.06c -- niobium 94 at 600K (Nb-94)
+Nuclide  40095.06c -- zirconium 95 at 600K (Zr-95)
+Nuclide  41095.06c -- niobium 95 at 600K (Nb-95)
+Nuclide  40096.06c -- zirconium 96 at 600K (Zr-96)
+Nuclide  44098.06c -- ruthenium 98 at 600K (Ru-98)
+Nuclide  42099.06c -- molybdenum 99 at 600K (Mo-99)
+Nuclide  43099.06c -- technetium 99 at 600K (Tc-99)
+Nuclide  44099.06c -- ruthenium 99 at 600K (Ru-99)
+Nuclide  44100.06c -- ruthenium 100 at 600K (Ru-100)
+Nuclide  44101.06c -- ruthenium 101 at 600K (Ru-101)
+Nuclide  44102.06c -- ruthenium 102 at 600K (Ru-102)
+Nuclide  46102.06c -- palladium 102 at 600K (Pd-102)
+Nuclide  44103.06c -- ruthenium 103 at 600K (Ru-103)
+Nuclide  45103.06c -- rhodium 103 at 600K (Rh-103)
+Nuclide  44104.06c -- ruthenium 104 at 600K (Ru-104)
+Nuclide  46104.06c -- palladium 104 at 600K (Pd-104)
+Nuclide  44105.06c -- ruthenium 105 at 600K (Ru-105)
+Nuclide  45105.06c -- rhodium 105 at 600K (Rh-105)
+Nuclide  46105.06c -- palladium 105 at 600K (Pd-105)
+Nuclide  44106.06c -- ruthenium 106 at 600K (Ru-106)
+Nuclide  46106.06c -- palladium 106 at 600K (Pd-106)
+Nuclide  48106.06c -- cadmium 106 at 600K (Cd-106)
+Nuclide  46107.06c -- palladium 107 at 600K (Pd-107)
+Nuclide  47107.06c -- silver 107 at 600K (Ag-107)
+Nuclide  46108.06c -- palladium 108 at 600K (Pd-108)
+Nuclide  48108.06c -- cadmium 108 at 600K (Cd-108)
+Nuclide  47109.06c -- silver 109 at 600K (Ag-109)
+Nuclide  46110.06c -- palladium 110 at 600K (Pd-110)
+Nuclide  47310.06c -- silver 110m at 600K (Ag-110m)
+Nuclide  48110.06c -- cadmium 110 at 600K (Cd-110)
+Nuclide  47111.06c -- silver 111 at 600K (Ag-111)
+Nuclide  48111.06c -- cadmium 111 at 600K (Cd-111)
+Nuclide  48112.06c -- cadmium 112 at 600K (Cd-112)
+Nuclide  50112.06c -- tin 112 at 600K (Sn-112)
+Nuclide  48113.06c -- cadmium 113 at 600K (Cd-113)
+Nuclide  49113.06c -- indium 113 at 600K (In-113)
+Nuclide  50113.06c -- tin 113 at 600K (Sn-113)
+Nuclide  48114.06c -- cadmium 114 at 600K (Cd-114)
+Nuclide  50114.06c -- tin 114 at 600K (Sn-114)
+Nuclide  48315.06c -- cadmium 115m at 600K (Cd-115m)
+Nuclide  49115.06c -- indium 115 at 600K (In-115)
+Nuclide  50115.06c -- tin 115 at 600K (Sn-115)
+Nuclide  48116.06c -- cadmium 116 at 600K (Cd-116)
+Nuclide  50116.06c -- tin 116 at 600K (Sn-116)
+Nuclide  50117.06c -- tin 117 at 600K (Sn-117)
+Nuclide  50118.06c -- tin 118 at 600K (Sn-118)
+Nuclide  50119.06c -- tin 119 at 600K (Sn-119)
+Nuclide  50120.06c -- tin 120 at 600K (Sn-120)
+Nuclide  52120.06c -- tellurium 120 at 600K (Te-120)
+Nuclide  51121.06c -- antimony 121 at 600K (Sb-121)
+Nuclide  50122.06c -- tin 122 at 600K (Sn-122)
+Nuclide  52122.06c -- tellurium 122 at 600K (Te-122)
+Nuclide  50123.06c -- tin 123 at 600K (Sn-123)
+Nuclide  51123.06c -- antimony 123 at 600K (Sb-123)
+Nuclide  52123.06c -- tellurium 123 at 600K (Te-123)
+Nuclide  50124.06c -- tin 124 at 600K (Sn-124)
+Nuclide  51124.06c -- antimony 124 at 600K (Sb-124)
+Nuclide  52124.06c -- tellurium 124 at 600K (Te-124)
+Nuclide  50125.06c -- tin 125 at 600K (Sn-125)
+Nuclide  51125.06c -- antimony 125 at 600K (Sb-125)
+Nuclide  52125.06c -- tellurium 125 at 600K (Te-125)
+Nuclide  50126.06c -- tin 126 at 600K (Sn-126)
+Nuclide  51126.06c -- antimony 126 at 600K (Sb-126)
+Nuclide  52126.06c -- tellurium 126 at 600K (Te-126)
+Nuclide  54126.06c -- xenon 126 at 600K (Xe-126)
+Nuclide  52327.06c -- tellurium 127m at 600K (Te-127m)
+Nuclide  53127.06c -- iodine 127 at 600K (I-127)
+Nuclide  52128.06c -- tellurium 128 at 600K (Te-128)
+Nuclide  54128.06c -- xenon 128 at 600K (Xe-128)
+Nuclide  52329.06c -- tellurium 129m at 600K (Te-129m)
+Nuclide  53129.06c -- iodine 129 at 600K (I-129)
+Nuclide  54129.06c -- xenon 129 at 600K (Xe-129)
+Nuclide  52130.06c -- tellurium 130 at 600K (Te-130)
+Nuclide  53130.06c -- iodine 130 at 600K (I-130)
+Nuclide  54130.06c -- xenon 130 at 600K (Xe-130)
+Nuclide  53131.06c -- iodine 131 at 600K (I-131)
+Nuclide  54131.06c -- xenon 131 at 600K (Xe-131)
+Nuclide  52132.06c -- tellurium 132 at 600K (Te-132)
+Nuclide  54132.06c -- xenon 132 at 600K (Xe-132)
+Nuclide  56132.06c -- barium 132 at 600K (Ba-132)
+Nuclide  54133.06c -- xenon 133 at 600K (Xe-133)
+Nuclide  55133.06c -- cesium 133 at 600K (Cs-133)
+Nuclide  56133.06c -- barium 133 at 600K (Ba-133)
+Nuclide  54134.06c -- xenon 134 at 600K (Xe-134)
+Nuclide  55134.06c -- cesium 134 at 600K (Cs-134)
+Nuclide  56134.06c -- barium 134 at 600K (Ba-134)
+Nuclide  53135.06c -- iodine 135 at 600K (I-135)
+Nuclide  54135.06c -- xenon 135 at 600K (Xe-135)
+Nuclide  55135.06c -- cesium 135 at 600K (Cs-135)
+Nuclide  56135.06c -- barium 135 at 600K (Ba-135)
+Nuclide  54136.06c -- xenon 136 at 600K (Xe-136)
+Nuclide  55136.06c -- cesium 136 at 600K (Cs-136)
+Nuclide  56136.06c -- barium 136 at 600K (Ba-136)
+Nuclide  55137.06c -- cesium 137 at 600K (Cs-137)
+Nuclide  56137.06c -- barium 137 at 600K (Ba-137)
+Nuclide  56138.06c -- barium 138 at 600K (Ba-138)
+Nuclide  57138.06c -- lanthanum 138 at 600K (La-138)
+Nuclide  58138.06c -- cerium 138 at 600K (Ce-138)
+Nuclide  57139.06c -- lanthanum 139 at 600K (La-139)
+Nuclide  58139.06c -- cerium 139 at 600K (Ce-139)
+Nuclide  56140.06c -- barium 140 at 600K (Ba-140)
+Nuclide  57140.06c -- lanthanum 140 at 600K (La-140)
+Nuclide  58140.06c -- cerium 140 at 600K (Ce-140)
+Nuclide  58141.06c -- cerium 141 at 600K (Ce-141)
+Nuclide  59141.06c -- praseodymium 141 at 600K (Pr-141)
+Nuclide  58142.06c -- cerium 142 at 600K (Ce-142)
+Nuclide  59142.06c -- praseodymium 142 at 600K (Pr-142)
+Nuclide  60142.06c -- neodymium 142 at 600K (Nd-142)
+Nuclide  58143.06c -- cerium 143 at 600K (Ce-143)
+Nuclide  59143.06c -- praseodymium 143 at 600K (Pr-143)
+Nuclide  60143.06c -- neodymium 143 at 600K (Nd-143)
+Nuclide  58144.06c -- cerium 144 at 600K (Ce-144)
+Nuclide  60144.06c -- neodymium 144 at 600K (Nd-144)
+Nuclide  62144.06c -- samarium 144 at 600K (Sm-144)
+Nuclide  60145.06c -- neodymium 145 at 600K (Nd-145)
+Nuclide  60146.06c -- neodymium 146 at 600K (Nd-146)
+Nuclide  60147.06c -- neodymium 147 at 600K (Nd-147)
+Nuclide  61147.06c -- promethium 147 at 600K (Pm-147)
+Nuclide  62147.06c -- samarium 147 at 600K (Sm-147)
+Nuclide  60148.06c -- neodymium 148 at 600K (Nd-148)
+Nuclide  61148.06c -- promethium 148 at 600K (Pm-148)
+Nuclide  61348.06c -- promethium 148m at 600K (Pm-148m)
+Nuclide  62148.06c -- samarium 148 at 600K (Sm-148)
+Nuclide  61149.06c -- promethium 149 at 600K (Pm-149)
+Nuclide  62149.06c -- samarium 149 at 600K (Sm-149)
+Nuclide  60150.06c -- neodymium 150 at 600K (Nd-150)
+Nuclide  62150.06c -- samarium 150 at 600K (Sm-150)
+Nuclide  61151.06c -- promethium 151 at 600K (Pm-151)
+Nuclide  62151.06c -- samarium 151 at 600K (Sm-151)
+Nuclide  63151.06c -- europium 151 at 600K (Eu-151)
+Nuclide  62152.06c -- samarium 152 at 600K (Sm-152)
+Nuclide  63152.06c -- europium 152 at 600K (Eu-152)
+Nuclide  64152.06c -- gadolinium 152 at 600K (Gd-152)
+Nuclide  62153.06c -- samarium 153 at 600K (Sm-153)
+Nuclide  63153.06c -- europium 153 at 600K (Eu-153)
+Nuclide  64153.06c -- gadolinium 153 at 600K (Gd-153)
+Nuclide  62154.06c -- samarium 154 at 600K (Sm-154)
+Nuclide  63154.06c -- europium 154 at 600K (Eu-154)
+Nuclide  64154.06c -- gadolinium 154 at 600K (Gd-154)
+Nuclide  63155.06c -- europium 155 at 600K (Eu-155)
+Nuclide  64155.06c -- gadolinium 155 at 600K (Gd-155)
+Nuclide  63156.06c -- europium 156 at 600K (Eu-156)
+Nuclide  64156.06c -- gadolinium 156 at 600K (Gd-156)
+Nuclide  66156.06c -- dysprosium 156 at 600K (Dy-156)
+Nuclide  63157.06c -- europium 157 at 600K (Eu-157)
+Nuclide  64157.06c -- gadolinium 157 at 600K (Gd-157)
+Nuclide  64158.06c -- gadolinium 158 at 600K (Gd-158)
+Nuclide  66158.06c -- dysprosium 158 at 600K (Dy-158)
+Nuclide  65159.06c -- terbium 159 at 600K (Tb-159)
+Nuclide  64160.06c -- gadolinium 160 at 600K (Gd-160)
+Nuclide  65160.06c -- terbium 160 at 600K (Tb-160)
+Nuclide  66160.06c -- dysprosium 160 at 600K (Dy-160)
+Nuclide  66161.06c -- dysprosium 161 at 600K (Dy-161)
+Nuclide  66162.06c -- dysprosium 162 at 600K (Dy-162)
+Nuclide  68162.06c -- erbium 162 at 600K (Er-162)
+Nuclide  66163.06c -- dysprosium 163 at 600K (Dy-163)
+Nuclide  66164.06c -- dysprosium 164 at 600K (Dy-164)
+Nuclide  68164.06c -- erbium 164 at 600K (Er-164)
+Nuclide  67165.06c -- holmium 165 at 600K (Ho-165)
+Nuclide  67366.06c -- holmium 166m at 600K (Ho-166m)
+Nuclide  68166.06c -- erbium 166 at 600K (Er-166)
+Nuclide  68167.06c -- erbium 167 at 600K (Er-167)
+Nuclide  68168.06c -- erbium 168 at 600K (Er-168)
+Nuclide  68170.06c -- erbium 170 at 600K (Er-170)
+Nuclide  12024.06c -- magnesium 24 at 600K (Mg-24)
+Nuclide  12025.06c -- magnesium 25 at 600K (Mg-25)
+Nuclide  22048.06c -- titanium 48 at 600K (Ti-48)
+Nuclide  22049.06c -- titanium 49 at 600K (Ti-49)
+Nuclide  22050.06c -- titanium 50 at 600K (Ti-50)
+Nuclide  23051.06c -- vanadium 51 at 600K (V-51)
+Nuclide  12026.06c -- magnesium 26 at 600K (Mg-26)
+Nuclide  13027.06c -- aluminum 27 at 600K (Al-27)
+Nuclide  15031.06c -- phosphorus 31 at 600K (P-31)
+Nuclide  16032.06c -- sulfur 32 at 600K (S-32)
+Nuclide  91231.06c -- protactinium 231 at 600K (Pa-231)
+Nuclide  90232.06c -- thorium 232 at 600K (Th-232)
+Nuclide  91232.06c -- protactinium 232 at 600K (Pa-232)
+Nuclide  92232.06c -- uranium 232 at 600K (U-232)
+Nuclide  96246.06c -- curium 246 at 600K (Cm-246)
+Nuclide  96247.06c -- curium 247 at 600K (Cm-247)
+Nuclide  20046.06c -- calcium 46 at 600K (Ca-46)
+Nuclide  22046.06c -- titanium 46 at 600K (Ti-46)
+Nuclide  22047.06c -- titanium 47 at 600K (Ti-47)
+Nuclide  16033.06c -- sulfur 33 at 600K (S-33)
+Nuclide  16034.06c -- sulfur 34 at 600K (S-34)
+Nuclide  90229.06c -- thorium 229 at 600K (Th-229)
+Nuclide  90230.06c -- thorium 230 at 600K (Th-230)
+Nuclide  96248.06c -- curium 248 at 600K (Cm-248)
+Nuclide  96249.06c -- curium 249 at 600K (Cm-249)
+Nuclide  97249.06c -- berkelium 249 at 600K (Bk-249)
+Nuclide  98249.06c -- californium 249 at 600K (Cf-249)
+Nuclide  20044.06c -- calcium 44 at 600K (Ca-44)
+Nuclide  21045.06c -- scandium 45 at 600K (Sc-45)
+Nuclide  17035.06c -- chlorine 35 at 600K (Cl-35)
+Nuclide  89227.06c -- actinium 227 at 600K (Ac-227)
+Nuclide  90227.06c -- thorium 227 at 600K (Th-227)
+Nuclide  90228.06c -- thorium 228 at 600K (Th-228)
+Nuclide  96250.06c -- curium 250 at 600K (Cm-250)
+Nuclide  97250.06c -- berkelium 250 at 600K (Bk-250)
+Nuclide  98250.06c -- californium 250 at 600K (Cf-250)
+Nuclide  98251.06c -- californium 251 at 600K (Cf-251)
+Nuclide  20042.06c -- calcium 42 at 600K (Ca-42)
+Nuclide  20043.06c -- calcium 43 at 600K (Ca-43)
+Nuclide  18036.06c -- argon 36 at 600K (Ar-36)
+Nuclide  88225.06c -- radium 225 at 600K (Ra-225)
+Nuclide  89225.06c -- actinium 225 at 600K (Ac-225)
+Nuclide  88226.06c -- radium 226 at 600K (Ra-226)
+Nuclide  89226.06c -- actinium 226 at 600K (Ac-226)
+Nuclide  98252.06c -- californium 252 at 600K (Cf-252)
+Nuclide  18040.06c -- argon 40 at 600K (Ar-40)
+Nuclide  19041.06c -- potassium 41 at 600K (K-41)
+Nuclide  17037.06c -- chlorine 37 at 600K (Cl-37)
+Nuclide  98253.06c -- californium 253 at 600K (Cf-253)
+Nuclide  99253.06c -- einsteinium 253 at 600K (Es-253)
+Nuclide  18038.06c -- argon 38 at 600K (Ar-38)
+Nuclide  88223.06c -- radium 223 at 600K (Ra-223)
+Nuclide  88224.06c -- radium 224 at 600K (Ra-224)
+Nuclide  19039.06c -- potassium 39 at 600K (K-39)
+
+Adding nuclides in material Batch3Axial2...
+
+Nuclide  94246.06c -- plutonium 246 at 600K (Pu-246)
+Nuclide  16036.06c -- sulfur 36 at 600K (S-36)
+Nuclide  19040.06c -- potassium 40 at 600K (K-40)
+Nuclide  98254.06c -- californium 254 at 600K (Cf-254)
+Nuclide  99254.06c -- einsteinium 254 at 600K (Es-254)
+Nuclide  99255.06c -- einsteinium 255 at 600K (Es-255)
+Nuclide 100255.06c -- fermium 255 at 600K (Fm-255)
+
+Adding nuclides in material Batch3Axial3...
+
+Adding nuclides in material Batch3Axial4...
+
+Nuclide  20040.06c -- calcium 40 at 600K (Ca-40)
+
+Adding nuclides in material Batch3Axial5...
+
+Adding nuclides in material Batch3Axial6...
+
+Adding nuclides in material Batch3Axial7...
+
+Adding nuclides in material Batch3Axial8...
+
+Adding nuclides in material Batch3Axial9...
+
+Adding nuclides in material Batch2Axial1...
+
+Adding nuclides in material Batch2Axial2...
+
+Adding nuclides in material Batch2Axial3...
+
+Adding nuclides in material Batch2Axial4...
+
+Adding nuclides in material Batch2Axial5...
+
+Adding nuclides in material Batch2Axial6...
+
+Adding nuclides in material Batch2Axial7...
+
+Adding nuclides in material Batch2Axial8...
+
+Adding nuclides in material Batch2Axial9...
+
+Adding nuclides in material Batch4Axial1...
+
+Adding nuclides in material Batch4Axial2...
+
+Adding nuclides in material Batch4Axial3...
+
+Adding nuclides in material Batch4Axial4...
+
+Adding nuclides in material Batch4Axial5...
+
+Adding nuclides in material Batch4Axial6...
+
+Adding nuclides in material Batch4Axial7...
+
+Adding nuclides in material Batch4Axial8...
+
+Adding nuclides in material Batch4Axial9...
+
+Adding nuclides in material Batch1Axial1...
+
+Adding nuclides in material Batch1Axial2...
+
+Adding nuclides in material Batch1Axial3...
+
+Adding nuclides in material Batch1Axial4...
+
+Adding nuclides in material Batch1Axial5...
+
+Adding nuclides in material Batch1Axial6...
+
+Adding nuclides in material Batch1Axial7...
+
+Adding nuclides in material Batch1Axial8...
+
+Adding nuclides in material Batch1Axial9...
+
+Adding nuclides in material Batch5Axial1...
+
+Adding nuclides in material Batch5Axial2...
+
+Adding nuclides in material Batch5Axial3...
+
+Adding nuclides in material Batch5Axial4...
+
+Adding nuclides in material Batch5Axial5...
+
+Adding nuclides in material Batch5Axial6...
+
+Adding nuclides in material Batch5Axial7...
+
+Adding nuclides in material Batch5Axial8...
+
+Adding nuclides in material Batch5Axial9...
+
+Adding nuclides in material Batch6Axial1...
+
+Adding nuclides in material Batch6Axial2...
+
+Adding nuclides in material Batch6Axial3...
+
+Adding nuclides in material Batch6Axial4...
+
+Adding nuclides in material Batch6Axial5...
+
+Adding nuclides in material Batch6Axial6...
+
+Adding nuclides in material Batch6Axial7...
+
+Adding nuclides in material Batch6Axial8...
+
+Adding nuclides in material Batch6Axial9...
+
+Adding nuclides in material belowcorecoolantmat...
+
+Adding nuclides in material belowcoreradialreflectormat...
+
+Adding nuclides in material belowcoreradialshieldmat...
+
+Nuclide   5010.06c -- boron 10 at 600K (B-10)
+Nuclide   5011.06c -- boron 11 at 600K (B-11)
+
+Adding nuclides in material abovecoreradialreflectormat...
+
+Nuclide  11023.12c -- sodium 23 at 1200K (Na-23)
+
+Adding nuclides in material abovecoreradialshieldmat...
+
+Adding nuclides in material radialreflectormat0...
+
+Adding nuclides in material radialreflectormat1...
+
+Adding nuclides in material radialreflectormat2...
+
+Adding nuclides in material radialreflectormat3...
+
+Adding nuclides in material radialreflectormat4...
+
+Adding nuclides in material radialreflectormat5...
+
+Adding nuclides in material radialreflectormat6...
+
+Adding nuclides in material radialreflectormat7...
+
+Adding nuclides in material radialreflectormat8...
+
+Adding nuclides in material radialshieldmat0...
+
+Adding nuclides in material radialshieldmat1...
+
+Adding nuclides in material radialshieldmat2...
+
+Adding nuclides in material radialshieldmat3...
+
+Adding nuclides in material radialshieldmat4...
+
+Adding nuclides in material radialshieldmat5...
+
+Adding nuclides in material radialshieldmat6...
+
+Adding nuclides in material radialshieldmat7...
+
+Adding nuclides in material radialshieldmat8...
+
+Adding nuclides in material outsidecoolantmat...
+
+Adding nuclides in material uppergasplenummat...
+
+Nuclide  28058.12c -- nickel 58 at 1200K (Ni-58)
+Nuclide  28060.12c -- nickel 60 at 1200K (Ni-60)
+Nuclide  28061.12c -- nickel 61 at 1200K (Ni-61)
+Nuclide  28062.12c -- nickel 62 at 1200K (Ni-62)
+Nuclide  28064.12c -- nickel 64 at 1200K (Ni-64)
+Nuclide  24050.12c -- chromium 50 at 1200K (Cr-50)
+Nuclide  24052.12c -- chromium 52 at 1200K (Cr-52)
+Nuclide  24053.12c -- chromium 53 at 1200K (Cr-53)
+Nuclide  24054.12c -- chromium 54 at 1200K (Cr-54)
+Nuclide  25055.12c -- manganese 55 at 1200K (Mn-55)
+Nuclide  42092.12c -- molybdenum 92 at 1200K (Mo-92)
+Nuclide  42094.12c -- molybdenum 94 at 1200K (Mo-94)
+Nuclide  42095.12c -- molybdenum 95 at 1200K (Mo-95)
+Nuclide  42096.12c -- molybdenum 96 at 1200K (Mo-96)
+Nuclide  42097.12c -- molybdenum 97 at 1200K (Mo-97)
+Nuclide  42098.12c -- molybdenum 98 at 1200K (Mo-98)
+Nuclide  42100.12c -- molybdenum 100 at 1200K (Mo-100)
+Nuclide  14028.12c -- silicon 28 at 1200K (Si-28)
+Nuclide  14029.12c -- silicon 29 at 1200K (Si-29)
+Nuclide  14030.12c -- silicon 30 at 1200K (Si-30)
+Nuclide  74000.12c -- natural tungsten at 1200K (W-nat)
+Nuclide  23000.12c -- natural vanadium at 1200K (V-nat)
+Nuclide   6000.12c -- natural carbon at 1200K (C-nat)
+Nuclide  26054.12c -- iron 54 at 1200K (Fe-54)
+Nuclide  26056.12c -- iron 56 at 1200K (Fe-56)
+Nuclide  26057.12c -- iron 57 at 1200K (Fe-57)
+Nuclide  26058.12c -- iron 58 at 1200K (Fe-58)
+
+Adding nuclides in material abovecorecoolantmat...
+
+Adding nuclides in material CR_non_inserted...
+
+Nuclide  26000.06c -- natural iron at 600K (Fe-nat)
+Nuclide  28000.06c -- natural nickel at 600K (Ni-nat)
+Nuclide  24000.06c -- natural chromium at 600K (Cr-nat)
+Nuclide  42000.06c -- natural molybdenum at 600K (Mo-nat)
+
+Adding activation products...
+
+Nuclide   1001.06c -- hydrogen at 600K (H-1)
+Nuclide   1002.06c -- deuterium at 600K (H-2)
+Nuclide   2004.06c -- helium 4 at 600K (He-4)
+Nuclide   1003.06c -- tritium at 600K (H-3)
+Nuclide   2003.06c -- helium 3 at 600K (He-3)
+
+Adding actinide data...
+
+
+Adding fission product data...
+
+
+Adding remaining data and forming paths...
+OK.
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch7Axial1
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch7Axial1
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch7Axial1
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch7Axial2
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch7Axial2
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch7Axial2
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch7Axial3
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch7Axial3
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch7Axial3
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch7Axial4
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch7Axial4
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch7Axial4
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch7Axial5
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch7Axial5
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch7Axial5
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch7Axial6
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch7Axial6
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch7Axial6
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch7Axial7
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch7Axial7
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch7Axial7
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch7Axial8
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch7Axial8
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch7Axial8
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch7Axial9
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch7Axial9
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch7Axial9
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch3Axial1
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch3Axial1
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch3Axial1
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch3Axial2
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch3Axial2
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch3Axial2
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch3Axial3
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch3Axial3
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch3Axial3
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch3Axial4
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch3Axial4
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch3Axial4
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch3Axial5
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch3Axial5
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch3Axial5
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch3Axial6
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch3Axial6
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch3Axial6
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch3Axial7
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch3Axial7
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch3Axial7
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch3Axial8
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch3Axial8
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch3Axial8
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch3Axial9
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch3Axial9
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch3Axial9
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch2Axial1
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch2Axial1
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch2Axial1
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch2Axial2
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch2Axial2
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch2Axial2
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch2Axial3
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch2Axial3
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch2Axial3
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch2Axial4
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch2Axial4
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch2Axial4
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch2Axial5
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch2Axial5
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch2Axial5
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch2Axial6
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch2Axial6
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch2Axial6
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch2Axial7
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch2Axial7
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch2Axial7
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch2Axial8
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch2Axial8
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch2Axial8
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch2Axial9
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch2Axial9
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch2Axial9
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch4Axial1
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch4Axial1
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch4Axial1
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch4Axial2
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch4Axial2
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch4Axial2
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch4Axial3
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch4Axial3
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch4Axial3
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch4Axial4
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch4Axial4
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch4Axial4
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch4Axial5
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch4Axial5
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch4Axial5
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch4Axial6
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch4Axial6
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch4Axial6
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch4Axial7
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch4Axial7
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch4Axial7
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch4Axial8
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch4Axial8
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch4Axial8
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch4Axial9
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch4Axial9
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch4Axial9
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch1Axial1
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch1Axial1
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch1Axial1
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch1Axial2
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch1Axial2
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch1Axial2
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch1Axial3
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch1Axial3
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch1Axial3
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch1Axial4
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch1Axial4
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch1Axial4
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch1Axial5
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch1Axial5
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch1Axial5
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch1Axial6
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch1Axial6
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch1Axial6
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch1Axial7
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch1Axial7
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch1Axial7
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch1Axial8
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch1Axial8
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch1Axial8
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch1Axial9
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch1Axial9
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch1Axial9
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch5Axial1
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch5Axial1
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch5Axial1
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch5Axial2
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch5Axial2
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch5Axial2
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch5Axial3
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch5Axial3
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch5Axial3
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch5Axial4
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch5Axial4
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch5Axial4
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch5Axial5
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch5Axial5
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch5Axial5
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch5Axial6
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch5Axial6
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch5Axial6
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch5Axial7
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch5Axial7
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch5Axial7
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch5Axial8
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch5Axial8
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch5Axial8
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch5Axial9
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch5Axial9
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch5Axial9
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch6Axial1
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch6Axial1
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch6Axial1
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch6Axial2
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch6Axial2
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch6Axial2
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch6Axial3
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch6Axial3
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch6Axial3
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch6Axial4
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch6Axial4
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch6Axial4
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch6Axial5
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch6Axial5
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch6Axial5
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch6Axial6
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch6Axial6
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch6Axial6
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch6Axial7
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch6Axial7
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch6Axial7
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch6Axial8
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch6Axial8
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch6Axial8
+
+
+ ***** Warning: Elemental XS (74000.06c) in burnable material Batch6Axial9
+
+
+ ***** Warning: Elemental XS (23000.06c) in burnable material Batch6Axial9
+
+
+ ***** Warning: Elemental XS (6000.06c) in burnable material Batch6Axial9
+
+Adding photon interaction data...
+
+Element   1000.84p -- hydrogen (photon library)
+Element   2000.84p -- helium (photon library)
+Element   5000.84p -- boron (photon library)
+Element   6000.84p -- carbon (photon library)
+Element   9000.84p -- fluorine (photon library)
+Element  10000.84p -- neon (photon library)
+Element  11000.84p -- sodium (photon library)
+Element  12000.84p -- magnesium (photon library)
+Element  13000.84p -- aluminum (photon library)
+Element  14000.84p -- silicon (photon library)
+Element  15000.84p -- phosphorus (photon library)
+Element  16000.84p -- sulfur (photon library)
+Element  17000.84p -- chlorine (photon library)
+Element  18000.84p -- argon (photon library)
+Element  19000.84p -- potassium (photon library)
+Element  20000.84p -- calcium (photon library)
+Element  21000.84p -- scandium (photon library)
+Element  22000.84p -- titanium (photon library)
+Element  23000.84p -- vanadium (photon library)
+Element  24000.84p -- chromium (photon library)
+Element  25000.84p -- manganese (photon library)
+Element  26000.84p -- iron (photon library)
+Element  27000.84p -- cobalt (photon library)
+Element  28000.84p -- nickel (photon library)
+Element  29000.84p -- copper (photon library)
+Element  30000.84p -- zinc (photon library)
+Element  31000.84p -- gallium (photon library)
+Element  32000.84p -- germanium (photon library)
+Element  33000.84p -- arsenic (photon library)
+Element  34000.84p -- selenium (photon library)
+Element  35000.84p -- bromine (photon library)
+Element  36000.84p -- krypton (photon library)
+Element  37000.84p -- rubidium (photon library)
+Element  38000.84p -- strontium (photon library)
+Element  39000.84p -- yttrium (photon library)
+Element  40000.84p -- zirconium (photon library)
+Element  41000.84p -- niobium (photon library)
+Element  42000.84p -- molybdenum (photon library)
+Element  43000.84p -- technetium (photon library)
+Element  44000.84p -- ruthenium (photon library)
+Element  45000.84p -- rhodium (photon library)
+Element  46000.84p -- palladium (photon library)
+Element  47000.84p -- silver (photon library)
+Element  48000.84p -- cadmium (photon library)
+Element  49000.84p -- indium (photon library)
+Element  50000.84p -- tin (photon library)
+Element  51000.84p -- antimony (photon library)
+Element  52000.84p -- tellurium (photon library)
+Element  53000.84p -- iodine (photon library)
+Element  54000.84p -- xenon (photon library)
+Element  55000.84p -- cesium (photon library)
+Element  56000.84p -- barium (photon library)
+Element  57000.84p -- lanthanum (photon library)
+Element  58000.84p -- cerium (photon library)
+Element  59000.84p -- praseodymium (photon library)
+Element  60000.84p -- neodymium (photon library)
+Element  61000.84p -- promethium (photon library)
+Element  62000.84p -- samarium (photon library)
+Element  63000.84p -- europium (photon library)
+Element  64000.84p -- gadolinium (photon library)
+Element  65000.84p -- terbium (photon library)
+Element  66000.84p -- dysprosium (photon library)
+Element  67000.84p -- holmium (photon library)
+Element  68000.84p -- erbium (photon library)
+Element  69000.84p -- thulium (photon library)
+Element  70000.84p -- ytterbium (photon library)
+Element  74000.84p -- tungsten (photon library)
+Element  80000.84p -- mercury (photon library)
+Element  81000.84p -- thallium (photon library)
+Element  82000.84p -- lead (photon library)
+Element  83000.84p -- bismuth (photon library)
+Element  84000.84p -- polonium (photon library)
+Element  85000.84p -- astatine (photon library)
+Element  86000.84p -- radon (photon library)
+Element  87000.84p -- francium (photon library)
+Element  88000.84p -- radium (photon library)
+Element  89000.84p -- actinium (photon library)
+Element  90000.84p -- thorium (photon library)
+Element  91000.84p -- protactinium (photon library)
+Element  92000.84p -- uranium (photon library)
+Element  93000.84p -- neptunium (photon library)
+Element  94000.84p -- plutonium (photon library)
+Element  95000.84p -- americium (photon library)
+Element  96000.84p -- curium (photon library)
+Element  97000.84p -- berkelium (photon library)
+Element  98000.84p -- californium (photon library)
+Element  99000.84p -- einsteinium (photon library)
+
+ ***** Warning: Photon interaction data not available for fermium (Z = 100)
+
+
+Checking data and printing output...
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 40096.06c has 1 decay modes
+
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 48114.06c has 1 decay modes
+
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 52123.06c has 1 decay modes
+
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 52130.06c has 1 decay modes
+
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 54134.06c has 1 decay modes
+
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 54136.06c has 1 decay modes
+
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 58142.06c has 1 decay modes
+
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 64160.06c has 1 decay modes
+
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 20046.06c has 1 decay modes
+
+
+***** Mon May  7 13:47:04 2018 (seed = 1525725872, MPI task = 0)
+Warning message from function CheckNuclideData:
+
+Stable nuclide 300700 has 1 decay modes
+
+OK.
+
+Adding all nuclides in inventory list...
+OK.
+
+Sharing input data to MPI tasks...
+OK.
+
+Generating unionize energy grids...
+
+Adding points:
+
+  1001.06c -- Points added in neutron grid: 252
+  1002.06c -- Points added in neutron grid: 115
+  1003.06c -- Points added in neutron grid: 58
+  2003.06c -- Points added in neutron grid: 32
+  2004.06c -- Points added in neutron grid: 129
+  5010.06c -- Points added in neutron grid: 196
+  5011.06c -- Points added in neutron grid: 2621
+  6000.06c -- Points added in neutron grid: 496
+  6000.12c -- Points added in neutron grid: 0
+ 11023.06c -- Points added in neutron grid: 1687
+ 11023.12c -- Points added in neutron grid: 19
+ 12024.06c -- Points added in neutron grid: 1591
+ 12025.06c -- Points added in neutron grid: 369
+ 12026.06c -- Points added in neutron grid: 204
+ 13027.06c -- Points added in neutron grid: 2066
+ 14028.06c -- Points added in neutron grid: 4157
+ 14028.12c -- Points added in neutron grid: 58
+ 14029.06c -- Points added in neutron grid: 906
+ 14029.12c -- Points added in neutron grid: 9
+ 14030.06c -- Points added in neutron grid: 1338
+ 14030.12c -- Points added in neutron grid: 29
+ 15031.06c -- Points added in neutron grid: 150
+ 16032.06c -- Points added in neutron grid: 3294
+ 16033.06c -- Points added in neutron grid: 468
+ 16034.06c -- Points added in neutron grid: 379
+ 16036.06c -- Points added in neutron grid: 27
+ 17035.06c -- Points added in neutron grid: 21294
+ 17037.06c -- Points added in neutron grid: 4473
+ 18036.06c -- Points added in neutron grid: 248
+ 18038.06c -- Points added in neutron grid: 288
+ 18040.06c -- Points added in neutron grid: 9499
+ 19039.06c -- Points added in neutron grid: 1902
+ 19040.06c -- Points added in neutron grid: 27
+ 19041.06c -- Points added in neutron grid: 1574
+ 20040.06c -- Points added in neutron grid: 3670
+ 20042.06c -- Points added in neutron grid: 2353
+ 20043.06c -- Points added in neutron grid: 1758
+ 20044.06c -- Points added in neutron grid: 1617
+ 20046.06c -- Points added in neutron grid: 217
+ 21045.06c -- Points added in neutron grid: 8905
+ 22046.06c -- Points added in neutron grid: 3958
+ 22047.06c -- Points added in neutron grid: 2123
+ 22048.06c -- Points added in neutron grid: 2587
+ 22049.06c -- Points added in neutron grid: 1451
+ 22050.06c -- Points added in neutron grid: 1275
+ 23000.06c -- Points added in neutron grid: 6713
+ 23000.12c -- Points added in neutron grid: 53
+ 23051.06c -- Points added in neutron grid: 2395
+ 24000.06c -- Points added in neutron grid: 5219
+ 24050.06c -- Points added in neutron grid: 11508
+ 24050.12c -- Points added in neutron grid: 689
+ 24052.06c -- Points added in neutron grid: 8717
+ 24052.12c -- Points added in neutron grid: 358
+ 24053.06c -- Points added in neutron grid: 6477
+ 24053.12c -- Points added in neutron grid: 239
+ 24054.06c -- Points added in neutron grid: 4930
+ 24054.12c -- Points added in neutron grid: 176
+ 25055.06c -- Points added in neutron grid: 4458
+ 25055.12c -- Points added in neutron grid: 317
+ 26000.06c -- Points added in neutron grid: 10338
+ 26054.06c -- Points added in neutron grid: 7725
+ 26054.12c -- Points added in neutron grid: 300
+ 26056.06c -- Points added in neutron grid: 10313
+ 26056.12c -- Points added in neutron grid: 566
+ 26057.06c -- Points added in neutron grid: 6676
+ 26057.12c -- Points added in neutron grid: 43
+ 26058.06c -- Points added in neutron grid: 2794
+ 26058.12c -- Points added in neutron grid: 156
+ 27058.06c -- Points added in neutron grid: 427
+ 27059.06c -- Points added in neutron grid: 10103
+ 28000.06c -- Points added in neutron grid: 18725
+ 28058.06c -- Points added in neutron grid: 19753
+ 28058.12c -- Points added in neutron grid: 713
+ 28059.06c -- Points added in neutron grid: 693
+ 28060.06c -- Points added in neutron grid: 9259
+ 28060.12c -- Points added in neutron grid: 571
+ 28061.06c -- Points added in neutron grid: 3920
+ 28061.12c -- Points added in neutron grid: 28
+ 28062.06c -- Points added in neutron grid: 2282
+ 28062.12c -- Points added in neutron grid: 16
+ 28064.06c -- Points added in neutron grid: 1654
+ 28064.12c -- Points added in neutron grid: 15
+ 29063.06c -- Points added in neutron grid: 10760
+ 29065.06c -- Points added in neutron grid: 7797
+ 30064.06c -- Points added in neutron grid: 8471
+ 31069.06c -- Points added in neutron grid: 2420
+ 31071.06c -- Points added in neutron grid: 2261
+ 32070.06c -- Points added in neutron grid: 1680
+ 32072.06c -- Points added in neutron grid: 1553
+ 32073.06c -- Points added in neutron grid: 4650
+ 32074.06c -- Points added in neutron grid: 532
+ 32076.06c -- Points added in neutron grid: 907
+ 33074.06c -- Points added in neutron grid: 371
+ 33075.06c -- Points added in neutron grid: 9194
+ 34074.06c -- Points added in neutron grid: 1609
+ 34076.06c -- Points added in neutron grid: 2475
+ 34077.06c -- Points added in neutron grid: 3098
+ 34078.06c -- Points added in neutron grid: 1801
+ 34079.06c -- Points added in neutron grid: 544
+ 34080.06c -- Points added in neutron grid: 1455
+ 34082.06c -- Points added in neutron grid: 1003
+ 35079.06c -- Points added in neutron grid: 9418
+ 35081.06c -- Points added in neutron grid: 9802
+ 36078.06c -- Points added in neutron grid: 854
+ 36080.06c -- Points added in neutron grid: 1028
+ 36082.06c -- Points added in neutron grid: 522
+ 36083.06c -- Points added in neutron grid: 306
+ 36084.06c -- Points added in neutron grid: 3499
+ 36085.06c -- Points added in neutron grid: 850
+ 36086.06c -- Points added in neutron grid: 4383
+ 37085.06c -- Points added in neutron grid: 7219
+ 37086.06c -- Points added in neutron grid: 3793
+ 37087.06c -- Points added in neutron grid: 1259
+ 38084.06c -- Points added in neutron grid: 1288
+ 38086.06c -- Points added in neutron grid: 2408
+ 38087.06c -- Points added in neutron grid: 6140
+ 38088.06c -- Points added in neutron grid: 3030
+ 38089.06c -- Points added in neutron grid: 45
+ 38090.06c -- Points added in neutron grid: 397
+ 39089.06c -- Points added in neutron grid: 4248
+ 39090.06c -- Points added in neutron grid: 2732
+ 39091.06c -- Points added in neutron grid: 473
+ 40090.06c -- Points added in neutron grid: 1551
+ 40091.06c -- Points added in neutron grid: 5265
+ 40092.06c -- Points added in neutron grid: 4410
+ 40093.06c -- Points added in neutron grid: 3837
+ 40094.06c -- Points added in neutron grid: 3912
+ 40095.06c -- Points added in neutron grid: 318
+ 40096.06c -- Points added in neutron grid: 2173
+ 41093.06c -- Points added in neutron grid: 9361
+ 41094.06c -- Points added in neutron grid: 636
+ 41095.06c -- Points added in neutron grid: 453
+ 42000.06c -- Points added in neutron grid: 2623
+ 42092.06c -- Points added in neutron grid: 5015
+ 42092.12c -- Points added in neutron grid: 342
+ 42094.06c -- Points added in neutron grid: 3626
+ 42094.12c -- Points added in neutron grid: 337
+ 42095.06c -- Points added in neutron grid: 4209
+ 42095.12c -- Points added in neutron grid: 458
+ 42096.06c -- Points added in neutron grid: 4561
+ 42096.12c -- Points added in neutron grid: 468
+ 42097.06c -- Points added in neutron grid: 4628
+ 42097.12c -- Points added in neutron grid: 517
+ 42098.06c -- Points added in neutron grid: 6911
+ 42098.12c -- Points added in neutron grid: 773
+ 42099.06c -- Points added in neutron grid: 375
+ 42100.06c -- Points added in neutron grid: 6745
+ 42100.12c -- Points added in neutron grid: 764
+ 43099.06c -- Points added in neutron grid: 18242
+ 44098.06c -- Points added in neutron grid: 585
+ 44099.06c -- Points added in neutron grid: 3347
+ 44100.06c -- Points added in neutron grid: 5026
+ 44101.06c -- Points added in neutron grid: 3362
+ 44102.06c -- Points added in neutron grid: 7408
+ 44103.06c -- Points added in neutron grid: 845
+ 44104.06c -- Points added in neutron grid: 6443
+ 44105.06c -- Points added in neutron grid: 55
+ 44106.06c -- Points added in neutron grid: 270
+ 45103.06c -- Points added in neutron grid: 11526
+ 45105.06c -- Points added in neutron grid: 106
+ 46102.06c -- Points added in neutron grid: 561
+ 46104.06c -- Points added in neutron grid: 6350
+ 46105.06c -- Points added in neutron grid: 9569
+ 46106.06c -- Points added in neutron grid: 5018
+ 46107.06c -- Points added in neutron grid: 4456
+ 46108.06c -- Points added in neutron grid: 5002
+ 46110.06c -- Points added in neutron grid: 4610
+ 47107.06c -- Points added in neutron grid: 3597
+ 47109.06c -- Points added in neutron grid: 13567
+ 47310.06c -- Points added in neutron grid: 1229
+ 47111.06c -- Points added in neutron grid: 4216
+ 48106.06c -- Points added in neutron grid: 3968
+ 48108.06c -- Points added in neutron grid: 3610
+ 48110.06c -- Points added in neutron grid: 5376
+ 48111.06c -- Points added in neutron grid: 7970
+ 48112.06c -- Points added in neutron grid: 6810
+ 48113.06c -- Points added in neutron grid: 17081
+ 48114.06c -- Points added in neutron grid: 5190
+ 48315.06c -- Points added in neutron grid: 1633
+ 48116.06c -- Points added in neutron grid: 3198
+ 49113.06c -- Points added in neutron grid: 3602
+ 49115.06c -- Points added in neutron grid: 10292
+ 50112.06c -- Points added in neutron grid: 1634
+ 50113.06c -- Points added in neutron grid: 2553
+ 50114.06c -- Points added in neutron grid: 1482
+ 50115.06c -- Points added in neutron grid: 833
+ 50116.06c -- Points added in neutron grid: 9741
+ 50117.06c -- Points added in neutron grid: 3998
+ 50118.06c -- Points added in neutron grid: 1038
+ 50119.06c -- Points added in neutron grid: 2036
+ 50120.06c -- Points added in neutron grid: 8152
+ 50122.06c -- Points added in neutron grid: 14041
+ 50123.06c -- Points added in neutron grid: 314
+ 50124.06c -- Points added in neutron grid: 7777
+ 50125.06c -- Points added in neutron grid: 1038
+ 50126.06c -- Points added in neutron grid: 263
+ 51121.06c -- Points added in neutron grid: 11430
+ 51123.06c -- Points added in neutron grid: 10649
+ 51124.06c -- Points added in neutron grid: 191
+ 51125.06c -- Points added in neutron grid: 345
+ 51126.06c -- Points added in neutron grid: 5256
+ 52120.06c -- Points added in neutron grid: 355
+ 52122.06c -- Points added in neutron grid: 12168
+ 52123.06c -- Points added in neutron grid: 4299
+ 52124.06c -- Points added in neutron grid: 8180
+ 52125.06c -- Points added in neutron grid: 11898
+ 52126.06c -- Points added in neutron grid: 3508
+ 52327.06c -- Points added in neutron grid: 612
+ 52128.06c -- Points added in neutron grid: 2728
+ 52329.06c -- Points added in neutron grid: 255
+ 52130.06c -- Points added in neutron grid: 1518
+ 52132.06c -- Points added in neutron grid: 1577
+ 53127.06c -- Points added in neutron grid: 19666
+ 53129.06c -- Points added in neutron grid: 6987
+ 53130.06c -- Points added in neutron grid: 4784
+ 53131.06c -- Points added in neutron grid: 316
+ 53135.06c -- Points added in neutron grid: 39
+ 54126.06c -- Points added in neutron grid: 762
+ 54128.06c -- Points added in neutron grid: 1747
+ 54129.06c -- Points added in neutron grid: 5674
+ 54130.06c -- Points added in neutron grid: 1875
+ 54131.06c -- Points added in neutron grid: 4055
+ 54132.06c -- Points added in neutron grid: 726
+ 54133.06c -- Points added in neutron grid: 254
+ 54134.06c -- Points added in neutron grid: 521
+ 54135.06c -- Points added in neutron grid: 346
+ 54136.06c -- Points added in neutron grid: 1294
+ 55133.06c -- Points added in neutron grid: 9723
+ 55134.06c -- Points added in neutron grid: 996
+ 55135.06c -- Points added in neutron grid: 811
+ 55136.06c -- Points added in neutron grid: 316
+ 55137.06c -- Points added in neutron grid: 293
+ 56132.06c -- Points added in neutron grid: 460
+ 56133.06c -- Points added in neutron grid: 692
+ 56134.06c -- Points added in neutron grid: 5334
+ 56135.06c -- Points added in neutron grid: 7039
+ 56136.06c -- Points added in neutron grid: 5465
+ 56137.06c -- Points added in neutron grid: 4196
+ 56138.06c -- Points added in neutron grid: 1881
+ 56140.06c -- Points added in neutron grid: 935
+ 57138.06c -- Points added in neutron grid: 1218
+ 57139.06c -- Points added in neutron grid: 6826
+ 57140.06c -- Points added in neutron grid: 1918
+ 58138.06c -- Points added in neutron grid: 1060
+ 58139.06c -- Points added in neutron grid: 1116
+ 58140.06c -- Points added in neutron grid: 7879
+ 58141.06c -- Points added in neutron grid: 665
+ 58142.06c -- Points added in neutron grid: 2115
+ 58143.06c -- Points added in neutron grid: 1481
+ 58144.06c -- Points added in neutron grid: 236
+ 59141.06c -- Points added in neutron grid: 8503
+ 59142.06c -- Points added in neutron grid: 2368
+ 59143.06c -- Points added in neutron grid: 564
+ 60142.06c -- Points added in neutron grid: 4183
+ 60143.06c -- Points added in neutron grid: 8323
+ 60144.06c -- Points added in neutron grid: 3186
+ 60145.06c -- Points added in neutron grid: 11044
+ 60146.06c -- Points added in neutron grid: 3380
+ 60147.06c -- Points added in neutron grid: 1039
+ 60148.06c -- Points added in neutron grid: 6373
+ 60150.06c -- Points added in neutron grid: 5850
+ 61147.06c -- Points added in neutron grid: 1725
+ 61148.06c -- Points added in neutron grid: 295
+ 61348.06c -- Points added in neutron grid: 112
+ 61149.06c -- Points added in neutron grid: 314
+ 61151.06c -- Points added in neutron grid: 2494
+ 62144.06c -- Points added in neutron grid: 3523
+ 62147.06c -- Points added in neutron grid: 11265
+ 62148.06c -- Points added in neutron grid: 1323
+ 62149.06c -- Points added in neutron grid: 7537
+ 62150.06c -- Points added in neutron grid: 2552
+ 62151.06c -- Points added in neutron grid: 4843
+ 62152.06c -- Points added in neutron grid: 7142
+ 62153.06c -- Points added in neutron grid: 829
+ 62154.06c -- Points added in neutron grid: 3469
+ 63151.06c -- Points added in neutron grid: 2954
+ 63152.06c -- Points added in neutron grid: 1655
+ 63153.06c -- Points added in neutron grid: 3114
+ 63154.06c -- Points added in neutron grid: 832
+ 63155.06c -- Points added in neutron grid: 497
+ 63156.06c -- Points added in neutron grid: 259
+ 63157.06c -- Points added in neutron grid: 1461
+ 64152.06c -- Points added in neutron grid: 9521
+ 64153.06c -- Points added in neutron grid: 1050
+ 64154.06c -- Points added in neutron grid: 10676
+ 64155.06c -- Points added in neutron grid: 3459
+ 64156.06c -- Points added in neutron grid: 5838
+ 64157.06c -- Points added in neutron grid: 3482
+ 64158.06c -- Points added in neutron grid: 7150
+ 64160.06c -- Points added in neutron grid: 4420
+ 65159.06c -- Points added in neutron grid: 10498
+ 65160.06c -- Points added in neutron grid: 273
+ 66156.06c -- Points added in neutron grid: 1326
+ 66158.06c -- Points added in neutron grid: 446
+ 66160.06c -- Points added in neutron grid: 5482
+ 66161.06c -- Points added in neutron grid: 10127
+ 66162.06c -- Points added in neutron grid: 6240
+ 66163.06c -- Points added in neutron grid: 6777
+ 66164.06c -- Points added in neutron grid: 5165
+ 67165.06c -- Points added in neutron grid: 10303
+ 67366.06c -- Points added in neutron grid: 341
+ 68162.06c -- Points added in neutron grid: 1651
+ 68164.06c -- Points added in neutron grid: 1969
+ 68166.06c -- Points added in neutron grid: 8637
+ 68167.06c -- Points added in neutron grid: 12448
+ 68168.06c -- Points added in neutron grid: 8715
+ 68170.06c -- Points added in neutron grid: 4269
+ 74000.06c -- Points added in neutron grid: 9612
+ 74000.12c -- Points added in neutron grid: 1034
+ 88223.06c -- Points added in neutron grid: 78
+ 88224.06c -- Points added in neutron grid: 98
+ 88225.06c -- Points added in neutron grid: 88
+ 88226.06c -- Points added in neutron grid: 3311
+ 89225.06c -- Points added in neutron grid: 41
+ 89226.06c -- Points added in neutron grid: 77
+ 89227.06c -- Points added in neutron grid: 118
+ 90227.06c -- Points added in neutron grid: 55
+ 90228.06c -- Points added in neutron grid: 181
+ 90229.06c -- Points added in neutron grid: 536
+ 90230.06c -- Points added in neutron grid: 2295
+ 90232.06c -- Points added in neutron grid: 19562
+ 90233.06c -- Points added in neutron grid: 42
+ 90234.06c -- Points added in neutron grid: 75
+ 91231.06c -- Points added in neutron grid: 4429
+ 91232.06c -- Points added in neutron grid: 230
+ 91233.06c -- Points added in neutron grid: 3629
+ 92232.06c -- Points added in neutron grid: 1978
+ 92233.06c -- Points added in neutron grid: 6864
+ 92234.06c -- Points added in neutron grid: 8162
+ 92235.06c -- Points added in neutron grid: 24693
+ 92236.06c -- Points added in neutron grid: 7666
+ 92237.06c -- Points added in neutron grid: 2420
+ 92238.06c -- Points added in neutron grid: 54618
+ 92239.06c -- Points added in neutron grid: 176
+ 92240.06c -- Points added in neutron grid: 5532
+ 92241.06c -- Points added in neutron grid: 2178
+ 93235.06c -- Points added in neutron grid: 113
+ 93236.06c -- Points added in neutron grid: 325
+ 93237.06c -- Points added in neutron grid: 10789
+ 93238.06c -- Points added in neutron grid: 70
+ 93239.06c -- Points added in neutron grid: 30
+ 94236.06c -- Points added in neutron grid: 197
+ 94237.06c -- Points added in neutron grid: 88
+ 94238.06c -- Points added in neutron grid: 1534
+ 94239.06c -- Points added in neutron grid: 20913
+ 94240.06c -- Points added in neutron grid: 15418
+ 94241.06c -- Points added in neutron grid: 4824
+ 94242.06c -- Points added in neutron grid: 1967
+ 94243.06c -- Points added in neutron grid: 2563
+ 94244.06c -- Points added in neutron grid: 2238
+ 94246.06c -- Points added in neutron grid: 58
+ 95241.06c -- Points added in neutron grid: 5040
+ 95242.06c -- Points added in neutron grid: 1653
+ 95342.06c -- Points added in neutron grid: 741
+ 95243.06c -- Points added in neutron grid: 6897
+ 95244.06c -- Points added in neutron grid: 73
+ 95344.06c -- Points added in neutron grid: 53
+ 96240.06c -- Points added in neutron grid: 2143
+ 96241.06c -- Points added in neutron grid: 4
+ 96242.06c -- Points added in neutron grid: 1450
+ 96243.06c -- Points added in neutron grid: 1711
+ 96244.06c -- Points added in neutron grid: 5766
+ 96245.06c -- Points added in neutron grid: 1225
+ 96246.06c -- Points added in neutron grid: 1914
+ 96247.06c -- Points added in neutron grid: 1478
+ 96248.06c -- Points added in neutron grid: 4643
+ 96249.06c -- Points added in neutron grid: 847
+ 96250.06c -- Points added in neutron grid: 237
+ 97249.06c -- Points added in neutron grid: 2293
+ 97250.06c -- Points added in neutron grid: 2455
+ 98249.06c -- Points added in neutron grid: 1541
+ 98250.06c -- Points added in neutron grid: 2246
+ 98251.06c -- Points added in neutron grid: 1638
+ 98252.06c -- Points added in neutron grid: 2159
+ 98253.06c -- Points added in neutron grid: 3049
+ 98254.06c -- Points added in neutron grid: 45
+ 99253.06c -- Points added in neutron grid: 2334
+ 99254.06c -- Points added in neutron grid: 33
+ 99255.06c -- Points added in neutron grid: 56
+100255.06c -- Points added in neutron grid: 49
+  1000.84p -- Points added in photon grid: 278
+  2000.84p -- Points added in photon grid: 92
+  5000.84p -- Points added in photon grid: 223
+  6000.84p -- Points added in photon grid: 186
+  9000.84p -- Points added in photon grid: 158
+ 10000.84p -- Points added in photon grid: 165
+ 11000.84p -- Points added in photon grid: 191
+ 12000.84p -- Points added in photon grid: 167
+ 13000.84p -- Points added in photon grid: 185
+ 14000.84p -- Points added in photon grid: 188
+ 15000.84p -- Points added in photon grid: 140
+ 16000.84p -- Points added in photon grid: 138
+ 17000.84p -- Points added in photon grid: 150
+ 18000.84p -- Points added in photon grid: 146
+ 19000.84p -- Points added in photon grid: 116
+ 20000.84p -- Points added in photon grid: 110
+ 21000.84p -- Points added in photon grid: 128
+ 22000.84p -- Points added in photon grid: 113
+ 23000.84p -- Points added in photon grid: 138
+ 24000.84p -- Points added in photon grid: 108
+ 25000.84p -- Points added in photon grid: 106
+ 26000.84p -- Points added in photon grid: 105
+ 27000.84p -- Points added in photon grid: 106
+ 28000.84p -- Points added in photon grid: 111
+ 29000.84p -- Points added in photon grid: 127
+ 30000.84p -- Points added in photon grid: 242
+ 31000.84p -- Points added in photon grid: 230
+ 32000.84p -- Points added in photon grid: 215
+ 33000.84p -- Points added in photon grid: 198
+ 34000.84p -- Points added in photon grid: 202
+ 35000.84p -- Points added in photon grid: 200
+ 36000.84p -- Points added in photon grid: 212
+ 37000.84p -- Points added in photon grid: 153
+ 38000.84p -- Points added in photon grid: 170
+ 39000.84p -- Points added in photon grid: 153
+ 40000.84p -- Points added in photon grid: 151
+ 41000.84p -- Points added in photon grid: 153
+ 42000.84p -- Points added in photon grid: 155
+ 43000.84p -- Points added in photon grid: 167
+ 44000.84p -- Points added in photon grid: 154
+ 45000.84p -- Points added in photon grid: 153
+ 46000.84p -- Points added in photon grid: 178
+ 47000.84p -- Points added in photon grid: 156
+ 48000.84p -- Points added in photon grid: 145
+ 49000.84p -- Points added in photon grid: 162
+ 50000.84p -- Points added in photon grid: 150
+ 51000.84p -- Points added in photon grid: 156
+ 52000.84p -- Points added in photon grid: 164
+ 53000.84p -- Points added in photon grid: 164
+ 54000.84p -- Points added in photon grid: 169
+ 55000.84p -- Points added in photon grid: 174
+ 56000.84p -- Points added in photon grid: 191
+ 57000.84p -- Points added in photon grid: 188
+ 58000.84p -- Points added in photon grid: 206
+ 59000.84p -- Points added in photon grid: 193
+ 60000.84p -- Points added in photon grid: 217
+ 61000.84p -- Points added in photon grid: 236
+ 62000.84p -- Points added in photon grid: 235
+ 63000.84p -- Points added in photon grid: 240
+ 64000.84p -- Points added in photon grid: 238
+ 65000.84p -- Points added in photon grid: 241
+ 66000.84p -- Points added in photon grid: 260
+ 67000.84p -- Points added in photon grid: 246
+ 68000.84p -- Points added in photon grid: 224
+ 69000.84p -- Points added in photon grid: 231
+ 70000.84p -- Points added in photon grid: 247
+ 74000.84p -- Points added in photon grid: 235
+ 80000.84p -- Points added in photon grid: 239
+ 81000.84p -- Points added in photon grid: 235
+ 82000.84p -- Points added in photon grid: 231
+ 83000.84p -- Points added in photon grid: 252
+ 84000.84p -- Points added in photon grid: 256
+ 85000.84p -- Points added in photon grid: 247
+ 86000.84p -- Points added in photon grid: 244
+ 87000.84p -- Points added in photon grid: 241
+ 88000.84p -- Points added in photon grid: 238
+ 89000.84p -- Points added in photon grid: 235
+ 90000.84p -- Points added in photon grid: 232
+ 91000.84p -- Points added in photon grid: 229
+ 92000.84p -- Points added in photon grid: 226
+ 93000.84p -- Points added in photon grid: 237
+ 94000.84p -- Points added in photon grid: 240
+ 95000.84p -- Points added in photon grid: 251
+ 96000.84p -- Points added in photon grid: 224
+ 97000.84p -- Points added in photon grid: 242
+ 98000.84p -- Points added in photon grid: 248
+ 99000.84p -- Points added in photon grid: 265
+
+Generating unionized energy grid:
+
+ - Unionization performed without grid thinning
+   between 1.00E-05 and 10.0 MeV.
+
+ - Final neutron grid size: 1363766 points.
+
+ - Final photon grid size: 21080 points.
+
+ - 70.79 Mb of memory allocated for grid data
+
+OK.
+
+Processing cross sections and ENDF reaction laws...
+
+Nuclide   1001.06c -- hydrogen at 600K (H-1)
+Nuclide   1002.06c -- deuterium at 600K (H-2)
+Nuclide   1003.06c -- tritium at 600K (H-3)
+Nuclide   2003.06c -- helium 3 at 600K (He-3)
+Nuclide   2004.06c -- helium 4 at 600K (He-4)
+Nuclide   5010.06c -- boron 10 at 600K (B-10)
+Nuclide   5011.06c -- boron 11 at 600K (B-11)
+Nuclide   6000.06c -- natural carbon at 600K (C-nat)
+Nuclide   6000.12c -- natural carbon at 1200K (C-nat)
+Nuclide  11023.06c -- sodium 23 at 600K (Na-23)
+Nuclide  11023.12c -- sodium 23 at 1200K (Na-23)
+Nuclide  12024.06c -- magnesium 24 at 600K (Mg-24)
+Nuclide  12025.06c -- magnesium 25 at 600K (Mg-25)
+Nuclide  12026.06c -- magnesium 26 at 600K (Mg-26)
+Nuclide  13027.06c -- aluminum 27 at 600K (Al-27)
+Nuclide  14028.06c -- silicon 28 at 600K (Si-28)
+Nuclide  14028.12c -- silicon 28 at 1200K (Si-28)
+Nuclide  14029.06c -- silicon 29 at 600K (Si-29)
+Nuclide  14029.12c -- silicon 29 at 1200K (Si-29)
+Nuclide  14030.06c -- silicon 30 at 600K (Si-30)
+Nuclide  14030.12c -- silicon 30 at 1200K (Si-30)
+Nuclide  15031.06c -- phosphorus 31 at 600K (P-31)
+Nuclide  16032.06c -- sulfur 32 at 600K (S-32)
+Nuclide  16033.06c -- sulfur 33 at 600K (S-33)
+Nuclide  16034.06c -- sulfur 34 at 600K (S-34)
+Nuclide  16036.06c -- sulfur 36 at 600K (S-36)
+Nuclide  17035.06c -- chlorine 35 at 600K (Cl-35)
+Nuclide  17037.06c -- chlorine 37 at 600K (Cl-37)
+Nuclide  18036.06c -- argon 36 at 600K (Ar-36)
+Nuclide  18038.06c -- argon 38 at 600K (Ar-38)
+Nuclide  18040.06c -- argon 40 at 600K (Ar-40)
+Nuclide  19039.06c -- potassium 39 at 600K (K-39)
+Nuclide  19040.06c -- potassium 40 at 600K (K-40)
+Nuclide  19041.06c -- potassium 41 at 600K (K-41)
+Nuclide  20040.06c -- calcium 40 at 600K (Ca-40)
+Nuclide  20042.06c -- calcium 42 at 600K (Ca-42)
+Nuclide  20043.06c -- calcium 43 at 600K (Ca-43)
+Nuclide  20044.06c -- calcium 44 at 600K (Ca-44)
+Nuclide  20046.06c -- calcium 46 at 600K (Ca-46)
+Nuclide  21045.06c -- scandium 45 at 600K (Sc-45)
+Nuclide  22046.06c -- titanium 46 at 600K (Ti-46)
+Nuclide  22047.06c -- titanium 47 at 600K (Ti-47)
+Nuclide  22048.06c -- titanium 48 at 600K (Ti-48)
+Nuclide  22049.06c -- titanium 49 at 600K (Ti-49)
+Nuclide  22050.06c -- titanium 50 at 600K (Ti-50)
+Nuclide  23000.06c -- natural vanadium at 600K (V-nat)
+Nuclide  23000.12c -- natural vanadium at 1200K (V-nat)
+Nuclide  23051.06c -- vanadium 51 at 600K (V-51)
+Nuclide  24000.06c -- natural chromium at 600K (Cr-nat)
+Nuclide  24050.06c -- chromium 50 at 600K (Cr-50)
+Nuclide  24050.12c -- chromium 50 at 1200K (Cr-50)
+Nuclide  24052.06c -- chromium 52 at 600K (Cr-52)
+Nuclide  24052.12c -- chromium 52 at 1200K (Cr-52)
+Nuclide  24053.06c -- chromium 53 at 600K (Cr-53)
+Nuclide  24053.12c -- chromium 53 at 1200K (Cr-53)
+Nuclide  24054.06c -- chromium 54 at 600K (Cr-54)
+Nuclide  24054.12c -- chromium 54 at 1200K (Cr-54)
+Nuclide  25055.06c -- manganese 55 at 600K (Mn-55)
+Nuclide  25055.12c -- manganese 55 at 1200K (Mn-55)
+Nuclide  26000.06c -- natural iron at 600K (Fe-nat)
+Nuclide  26054.06c -- iron 54 at 600K (Fe-54)
+Nuclide  26054.12c -- iron 54 at 1200K (Fe-54)
+Nuclide  26056.06c -- iron 56 at 600K (Fe-56)
+Nuclide  26056.12c -- iron 56 at 1200K (Fe-56)
+Nuclide  26057.06c -- iron 57 at 600K (Fe-57)
+Nuclide  26057.12c -- iron 57 at 1200K (Fe-57)
+Nuclide  26058.06c -- iron 58 at 600K (Fe-58)
+Nuclide  26058.12c -- iron 58 at 1200K (Fe-58)
+Nuclide  27058.06c -- cobalt 58 at 600K (Co-58)
+Nuclide  27059.06c -- cobalt 59 at 600K (Co-59)
+Nuclide  28000.06c -- natural nickel at 600K (Ni-nat)
+Nuclide  28058.06c -- nickel 58 at 600K (Ni-58)
+Nuclide  28058.12c -- nickel 58 at 1200K (Ni-58)
+Nuclide  28059.06c -- nickel 59 at 600K (Ni-59)
+Nuclide  28060.06c -- nickel 60 at 600K (Ni-60)
+Nuclide  28060.12c -- nickel 60 at 1200K (Ni-60)
+Nuclide  28061.06c -- nickel 61 at 600K (Ni-61)
+Nuclide  28061.12c -- nickel 61 at 1200K (Ni-61)
+Nuclide  28062.06c -- nickel 62 at 600K (Ni-62)
+Nuclide  28062.12c -- nickel 62 at 1200K (Ni-62)
+Nuclide  28064.06c -- nickel 64 at 600K (Ni-64)
+Nuclide  28064.12c -- nickel 64 at 1200K (Ni-64)
+Nuclide  29063.06c -- copper 63 at 600K (Cu-63)
+Nuclide  29065.06c -- copper 65 at 600K (Cu-65)
+Nuclide  30064.06c -- zinc 64 at 600K (Zn-64)
+Nuclide  31069.06c -- gallium 69 at 600K (Ga-69)
+Nuclide  31071.06c -- gallium 71 at 600K (Ga-71)
+Nuclide  32070.06c -- germanium 70 at 600K (Ge-70)
+Nuclide  32072.06c -- germanium 72 at 600K (Ge-72)
+Nuclide  32073.06c -- germanium 73 at 600K (Ge-73)
+Nuclide  32074.06c -- germanium 74 at 600K (Ge-74)
+Nuclide  32076.06c -- germanium 76 at 600K (Ge-76)
+Nuclide  33074.06c -- arsenic 74 at 600K (As-74)
+Nuclide  33075.06c -- arsenic 75 at 600K (As-75)
+Nuclide  34074.06c -- selenium 74 at 600K (Se-74)
+Nuclide  34076.06c -- selenium 76 at 600K (Se-76)
+Nuclide  34077.06c -- selenium 77 at 600K (Se-77)
+Nuclide  34078.06c -- selenium 78 at 600K (Se-78)
+Nuclide  34079.06c -- selenium 79 at 600K (Se-79)
+Nuclide  34080.06c -- selenium 80 at 600K (Se-80)
+Nuclide  34082.06c -- selenium 82 at 600K (Se-82)
+Nuclide  35079.06c -- bromine 79 at 600K (Br-79)
+Nuclide  35081.06c -- bromine 81 at 600K (Br-81)
+Nuclide  36078.06c -- krypton 78 at 600K (Kr-78)
+Nuclide  36080.06c -- krypton 80 at 600K (Kr-80)
+Nuclide  36082.06c -- krypton 82 at 600K (Kr-82)
+Nuclide  36083.06c -- krypton 83 at 600K (Kr-83)
+Nuclide  36084.06c -- krypton 84 at 600K (Kr-84)
+Nuclide  36085.06c -- krypton 85 at 600K (Kr-85)
+Nuclide  36086.06c -- krypton 86 at 600K (Kr-86)
+Nuclide  37085.06c -- rubidium 85 at 600K (Rb-85)
+Nuclide  37086.06c -- rubidium 86 at 600K (Rb-86)
+Nuclide  37087.06c -- rubidium 87 at 600K (Rb-87)
+Nuclide  38084.06c -- strontium 84 at 600K (Sr-84)
+Nuclide  38086.06c -- strontium 86 at 600K (Sr-86)
+Nuclide  38087.06c -- strontium 87 at 600K (Sr-87)
+Nuclide  38088.06c -- strontium 88 at 600K (Sr-88)
+Nuclide  38089.06c -- strontium 89 at 600K (Sr-89)
+Nuclide  38090.06c -- strontium 90 at 600K (Sr-90)
+Nuclide  39089.06c -- yttrium 89 at 600K (Y-89)
+Nuclide  39090.06c -- yttrium 90 at 600K (Y-90)
+Nuclide  39091.06c -- yttrium 91 at 600K (Y-91)
+Nuclide  40090.06c -- zirconium 90 at 600K (Zr-90)
+Nuclide  40091.06c -- zirconium 91 at 600K (Zr-91)
+Nuclide  40092.06c -- zirconium 92 at 600K (Zr-92)
+Nuclide  40093.06c -- zirconium 93 at 600K (Zr-93)
+Nuclide  40094.06c -- zirconium 94 at 600K (Zr-94)
+Nuclide  40095.06c -- zirconium 95 at 600K (Zr-95)
+Nuclide  40096.06c -- zirconium 96 at 600K (Zr-96)
+Nuclide  41093.06c -- niobium 93 at 600K (Nb-93)
+Nuclide  41094.06c -- niobium 94 at 600K (Nb-94)
+Nuclide  41095.06c -- niobium 95 at 600K (Nb-95)
+Nuclide  42000.06c -- natural molybdenum at 600K (Mo-nat)
+Nuclide  42092.06c -- molybdenum 92 at 600K (Mo-92)
+Nuclide  42092.12c -- molybdenum 92 at 1200K (Mo-92)
+Nuclide  42094.06c -- molybdenum 94 at 600K (Mo-94)
+Nuclide  42094.12c -- molybdenum 94 at 1200K (Mo-94)
+Nuclide  42095.06c -- molybdenum 95 at 600K (Mo-95)
+Nuclide  42095.12c -- molybdenum 95 at 1200K (Mo-95)
+Nuclide  42096.06c -- molybdenum 96 at 600K (Mo-96)
+Nuclide  42096.12c -- molybdenum 96 at 1200K (Mo-96)
+Nuclide  42097.06c -- molybdenum 97 at 600K (Mo-97)
+Nuclide  42097.12c -- molybdenum 97 at 1200K (Mo-97)
+Nuclide  42098.06c -- molybdenum 98 at 600K (Mo-98)
+Nuclide  42098.12c -- molybdenum 98 at 1200K (Mo-98)
+Nuclide  42099.06c -- molybdenum 99 at 600K (Mo-99)
+Nuclide  42100.06c -- molybdenum 100 at 600K (Mo-100)
+Nuclide  42100.12c -- molybdenum 100 at 1200K (Mo-100)
+Nuclide  43099.06c -- technetium 99 at 600K (Tc-99)
+Nuclide  44098.06c -- ruthenium 98 at 600K (Ru-98)
+Nuclide  44099.06c -- ruthenium 99 at 600K (Ru-99)
+Nuclide  44100.06c -- ruthenium 100 at 600K (Ru-100)
+Nuclide  44101.06c -- ruthenium 101 at 600K (Ru-101)
+Nuclide  44102.06c -- ruthenium 102 at 600K (Ru-102)
+Nuclide  44103.06c -- ruthenium 103 at 600K (Ru-103)
+Nuclide  44104.06c -- ruthenium 104 at 600K (Ru-104)
+Nuclide  44105.06c -- ruthenium 105 at 600K (Ru-105)
+Nuclide  44106.06c -- ruthenium 106 at 600K (Ru-106)
+Nuclide  45103.06c -- rhodium 103 at 600K (Rh-103)
+Nuclide  45105.06c -- rhodium 105 at 600K (Rh-105)
+Nuclide  46102.06c -- palladium 102 at 600K (Pd-102)
+Nuclide  46104.06c -- palladium 104 at 600K (Pd-104)
+Nuclide  46105.06c -- palladium 105 at 600K (Pd-105)
+Nuclide  46106.06c -- palladium 106 at 600K (Pd-106)
+Nuclide  46107.06c -- palladium 107 at 600K (Pd-107)
+Nuclide  46108.06c -- palladium 108 at 600K (Pd-108)
+Nuclide  46110.06c -- palladium 110 at 600K (Pd-110)
+Nuclide  47107.06c -- silver 107 at 600K (Ag-107)
+Nuclide  47109.06c -- silver 109 at 600K (Ag-109)
+Nuclide  47310.06c -- silver 110m at 600K (Ag-110m)
+Nuclide  47111.06c -- silver 111 at 600K (Ag-111)
+Nuclide  48106.06c -- cadmium 106 at 600K (Cd-106)
+Nuclide  48108.06c -- cadmium 108 at 600K (Cd-108)
+Nuclide  48110.06c -- cadmium 110 at 600K (Cd-110)
+Nuclide  48111.06c -- cadmium 111 at 600K (Cd-111)
+Nuclide  48112.06c -- cadmium 112 at 600K (Cd-112)
+Nuclide  48113.06c -- cadmium 113 at 600K (Cd-113)
+Nuclide  48114.06c -- cadmium 114 at 600K (Cd-114)
+Nuclide  48315.06c -- cadmium 115m at 600K (Cd-115m)
+Nuclide  48116.06c -- cadmium 116 at 600K (Cd-116)
+Nuclide  49113.06c -- indium 113 at 600K (In-113)
+Nuclide  49115.06c -- indium 115 at 600K (In-115)
+Nuclide  50112.06c -- tin 112 at 600K (Sn-112)
+Nuclide  50113.06c -- tin 113 at 600K (Sn-113)
+Nuclide  50114.06c -- tin 114 at 600K (Sn-114)
+Nuclide  50115.06c -- tin 115 at 600K (Sn-115)
+Nuclide  50116.06c -- tin 116 at 600K (Sn-116)
+Nuclide  50117.06c -- tin 117 at 600K (Sn-117)
+Nuclide  50118.06c -- tin 118 at 600K (Sn-118)
+Nuclide  50119.06c -- tin 119 at 600K (Sn-119)
+Nuclide  50120.06c -- tin 120 at 600K (Sn-120)
+Nuclide  50122.06c -- tin 122 at 600K (Sn-122)
+Nuclide  50123.06c -- tin 123 at 600K (Sn-123)
+Nuclide  50124.06c -- tin 124 at 600K (Sn-124)
+Nuclide  50125.06c -- tin 125 at 600K (Sn-125)
+Nuclide  50126.06c -- tin 126 at 600K (Sn-126)
+Nuclide  51121.06c -- antimony 121 at 600K (Sb-121)
+Nuclide  51123.06c -- antimony 123 at 600K (Sb-123)
+Nuclide  51124.06c -- antimony 124 at 600K (Sb-124)
+Nuclide  51125.06c -- antimony 125 at 600K (Sb-125)
+Nuclide  51126.06c -- antimony 126 at 600K (Sb-126)
+Nuclide  52120.06c -- tellurium 120 at 600K (Te-120)
+Nuclide  52122.06c -- tellurium 122 at 600K (Te-122)
+Nuclide  52123.06c -- tellurium 123 at 600K (Te-123)
+Nuclide  52124.06c -- tellurium 124 at 600K (Te-124)
+Nuclide  52125.06c -- tellurium 125 at 600K (Te-125)
+Nuclide  52126.06c -- tellurium 126 at 600K (Te-126)
+Nuclide  52327.06c -- tellurium 127m at 600K (Te-127m)
+Nuclide  52128.06c -- tellurium 128 at 600K (Te-128)
+Nuclide  52329.06c -- tellurium 129m at 600K (Te-129m)
+Nuclide  52130.06c -- tellurium 130 at 600K (Te-130)
+Nuclide  52132.06c -- tellurium 132 at 600K (Te-132)
+Nuclide  53127.06c -- iodine 127 at 600K (I-127)
+Nuclide  53129.06c -- iodine 129 at 600K (I-129)
+Nuclide  53130.06c -- iodine 130 at 600K (I-130)
+Nuclide  53131.06c -- iodine 131 at 600K (I-131)
+Nuclide  53135.06c -- iodine 135 at 600K (I-135)
+Nuclide  54126.06c -- xenon 126 at 600K (Xe-126)
+Nuclide  54128.06c -- xenon 128 at 600K (Xe-128)
+Nuclide  54129.06c -- xenon 129 at 600K (Xe-129)
+Nuclide  54130.06c -- xenon 130 at 600K (Xe-130)
+Nuclide  54131.06c -- xenon 131 at 600K (Xe-131)
+Nuclide  54132.06c -- xenon 132 at 600K (Xe-132)
+Nuclide  54133.06c -- xenon 133 at 600K (Xe-133)
+Nuclide  54134.06c -- xenon 134 at 600K (Xe-134)
+Nuclide  54135.06c -- xenon 135 at 600K (Xe-135)
+Nuclide  54136.06c -- xenon 136 at 600K (Xe-136)
+Nuclide  55133.06c -- cesium 133 at 600K (Cs-133)
+Nuclide  55134.06c -- cesium 134 at 600K (Cs-134)
+Nuclide  55135.06c -- cesium 135 at 600K (Cs-135)
+Nuclide  55136.06c -- cesium 136 at 600K (Cs-136)
+Nuclide  55137.06c -- cesium 137 at 600K (Cs-137)
+Nuclide  56132.06c -- barium 132 at 600K (Ba-132)
+Nuclide  56133.06c -- barium 133 at 600K (Ba-133)
+Nuclide  56134.06c -- barium 134 at 600K (Ba-134)
+Nuclide  56135.06c -- barium 135 at 600K (Ba-135)
+Nuclide  56136.06c -- barium 136 at 600K (Ba-136)
+Nuclide  56137.06c -- barium 137 at 600K (Ba-137)
+Nuclide  56138.06c -- barium 138 at 600K (Ba-138)
+Nuclide  56140.06c -- barium 140 at 600K (Ba-140)
+Nuclide  57138.06c -- lanthanum 138 at 600K (La-138)
+Nuclide  57139.06c -- lanthanum 139 at 600K (La-139)
+Nuclide  57140.06c -- lanthanum 140 at 600K (La-140)
+Nuclide  58138.06c -- cerium 138 at 600K (Ce-138)
+Nuclide  58139.06c -- cerium 139 at 600K (Ce-139)
+Nuclide  58140.06c -- cerium 140 at 600K (Ce-140)
+Nuclide  58141.06c -- cerium 141 at 600K (Ce-141)
+Nuclide  58142.06c -- cerium 142 at 600K (Ce-142)
+Nuclide  58143.06c -- cerium 143 at 600K (Ce-143)
+Nuclide  58144.06c -- cerium 144 at 600K (Ce-144)
+Nuclide  59141.06c -- praseodymium 141 at 600K (Pr-141)
+Nuclide  59142.06c -- praseodymium 142 at 600K (Pr-142)
+Nuclide  59143.06c -- praseodymium 143 at 600K (Pr-143)
+Nuclide  60142.06c -- neodymium 142 at 600K (Nd-142)
+Nuclide  60143.06c -- neodymium 143 at 600K (Nd-143)
+Nuclide  60144.06c -- neodymium 144 at 600K (Nd-144)
+Nuclide  60145.06c -- neodymium 145 at 600K (Nd-145)
+Nuclide  60146.06c -- neodymium 146 at 600K (Nd-146)
+Nuclide  60147.06c -- neodymium 147 at 600K (Nd-147)
+Nuclide  60148.06c -- neodymium 148 at 600K (Nd-148)
+Nuclide  60150.06c -- neodymium 150 at 600K (Nd-150)
+Nuclide  61147.06c -- promethium 147 at 600K (Pm-147)
+Nuclide  61148.06c -- promethium 148 at 600K (Pm-148)
+Nuclide  61348.06c -- promethium 148m at 600K (Pm-148m)
+Nuclide  61149.06c -- promethium 149 at 600K (Pm-149)
+Nuclide  61151.06c -- promethium 151 at 600K (Pm-151)
+Nuclide  62144.06c -- samarium 144 at 600K (Sm-144)
+Nuclide  62147.06c -- samarium 147 at 600K (Sm-147)
+Nuclide  62148.06c -- samarium 148 at 600K (Sm-148)
+Nuclide  62149.06c -- samarium 149 at 600K (Sm-149)
+Nuclide  62150.06c -- samarium 150 at 600K (Sm-150)
+Nuclide  62151.06c -- samarium 151 at 600K (Sm-151)
+Nuclide  62152.06c -- samarium 152 at 600K (Sm-152)
+Nuclide  62153.06c -- samarium 153 at 600K (Sm-153)
+Nuclide  62154.06c -- samarium 154 at 600K (Sm-154)
+Nuclide  63151.06c -- europium 151 at 600K (Eu-151)
+Nuclide  63152.06c -- europium 152 at 600K (Eu-152)
+Nuclide  63153.06c -- europium 153 at 600K (Eu-153)
+Nuclide  63154.06c -- europium 154 at 600K (Eu-154)
+Nuclide  63155.06c -- europium 155 at 600K (Eu-155)
+Nuclide  63156.06c -- europium 156 at 600K (Eu-156)
+Nuclide  63157.06c -- europium 157 at 600K (Eu-157)
+Nuclide  64152.06c -- gadolinium 152 at 600K (Gd-152)
+Nuclide  64153.06c -- gadolinium 153 at 600K (Gd-153)
+Nuclide  64154.06c -- gadolinium 154 at 600K (Gd-154)
+Nuclide  64155.06c -- gadolinium 155 at 600K (Gd-155)
+Nuclide  64156.06c -- gadolinium 156 at 600K (Gd-156)
+Nuclide  64157.06c -- gadolinium 157 at 600K (Gd-157)
+Nuclide  64158.06c -- gadolinium 158 at 600K (Gd-158)
+Nuclide  64160.06c -- gadolinium 160 at 600K (Gd-160)
+Nuclide  65159.06c -- terbium 159 at 600K (Tb-159)
+Nuclide  65160.06c -- terbium 160 at 600K (Tb-160)
+Nuclide  66156.06c -- dysprosium 156 at 600K (Dy-156)
+Nuclide  66158.06c -- dysprosium 158 at 600K (Dy-158)
+Nuclide  66160.06c -- dysprosium 160 at 600K (Dy-160)
+Nuclide  66161.06c -- dysprosium 161 at 600K (Dy-161)
+Nuclide  66162.06c -- dysprosium 162 at 600K (Dy-162)
+Nuclide  66163.06c -- dysprosium 163 at 600K (Dy-163)
+Nuclide  66164.06c -- dysprosium 164 at 600K (Dy-164)
+Nuclide  67165.06c -- holmium 165 at 600K (Ho-165)
+Nuclide  67366.06c -- holmium 166m at 600K (Ho-166m)
+Nuclide  68162.06c -- erbium 162 at 600K (Er-162)
+Nuclide  68164.06c -- erbium 164 at 600K (Er-164)
+Nuclide  68166.06c -- erbium 166 at 600K (Er-166)
+Nuclide  68167.06c -- erbium 167 at 600K (Er-167)
+Nuclide  68168.06c -- erbium 168 at 600K (Er-168)
+Nuclide  68170.06c -- erbium 170 at 600K (Er-170)
+Nuclide  74000.06c -- natural tungsten at 600K (W-nat)
+Nuclide  74000.12c -- natural tungsten at 1200K (W-nat)
+Nuclide  88223.06c -- radium 223 at 600K (Ra-223)
+Nuclide  88224.06c -- radium 224 at 600K (Ra-224)
+Nuclide  88225.06c -- radium 225 at 600K (Ra-225)
+Nuclide  88226.06c -- radium 226 at 600K (Ra-226)
+Nuclide  89225.06c -- actinium 225 at 600K (Ac-225)
+Nuclide  89226.06c -- actinium 226 at 600K (Ac-226)
+Nuclide  89227.06c -- actinium 227 at 600K (Ac-227)
+Nuclide  90227.06c -- thorium 227 at 600K (Th-227)
+Nuclide  90228.06c -- thorium 228 at 600K (Th-228)
+Nuclide  90229.06c -- thorium 229 at 600K (Th-229)
+Nuclide  90230.06c -- thorium 230 at 600K (Th-230)
+Nuclide  90232.06c -- thorium 232 at 600K (Th-232)
+Nuclide  90233.06c -- thorium 233 at 600K (Th-233)
+Nuclide  90234.06c -- thorium 234 at 600K (Th-234)
+Nuclide  91231.06c -- protactinium 231 at 600K (Pa-231)
+Nuclide  91232.06c -- protactinium 232 at 600K (Pa-232)
+Nuclide  91233.06c -- protactinium 233 at 600K (Pa-233)
+Nuclide  92232.06c -- uranium 232 at 600K (U-232)
+Nuclide  92233.06c -- uranium 233 at 600K (U-233)
+Nuclide  92234.06c -- uranium 234 at 600K (U-234)
+Nuclide  92235.06c -- uranium 235 at 600K (U-235)
+Nuclide  92236.06c -- uranium 236 at 600K (U-236)
+Nuclide  92237.06c -- uranium 237 at 600K (U-237)
+Nuclide  92238.06c -- uranium 238 at 600K (U-238)
+Nuclide  92239.06c -- uranium 239 at 600K (U-239)
+Nuclide  92240.06c -- uranium 240 at 600K (U-240)
+Nuclide  92241.06c -- uranium 241 at 600K (U-241)
+Nuclide  93235.06c -- neptunium 235 at 600K (Np-235)
+Nuclide  93236.06c -- neptunium 236 at 600K (Np-236)
+Nuclide  93237.06c -- neptunium 237 at 600K (Np-237)
+Nuclide  93238.06c -- neptunium 238 at 600K (Np-238)
+Nuclide  93239.06c -- neptunium 239 at 600K (Np-239)
+Nuclide  94236.06c -- plutonium 236 at 600K (Pu-236)
+Nuclide  94237.06c -- plutonium 237 at 600K (Pu-237)
+Nuclide  94238.06c -- plutonium 238 at 600K (Pu-238)
+Nuclide  94239.06c -- plutonium 239 at 600K (Pu-239)
+Nuclide  94240.06c -- plutonium 240 at 600K (Pu-240)
+Nuclide  94241.06c -- plutonium 241 at 600K (Pu-241)
+Nuclide  94242.06c -- plutonium 242 at 600K (Pu-242)
+Nuclide  94243.06c -- plutonium 243 at 600K (Pu-243)
+Nuclide  94244.06c -- plutonium 244 at 600K (Pu-244)
+Nuclide  94246.06c -- plutonium 246 at 600K (Pu-246)
+Nuclide  95241.06c -- americium 241 at 600K (Am-241)
+Nuclide  95242.06c -- americium 242 at 600K (Am-242)
+Nuclide  95342.06c -- americium 242m at 600K (Am-242m)
+Nuclide  95243.06c -- americium 243 at 600K (Am-243)
+Nuclide  95244.06c -- americium 244 at 600K (Am-244)
+Nuclide  95344.06c -- americium 244m at 600K (Am-244m)
+Nuclide  96240.06c -- curium 240 at 600K (Cm-240)
+Nuclide  96241.06c -- curium 241 at 600K (Cm-241)
+Nuclide  96242.06c -- curium 242 at 600K (Cm-242)
+Nuclide  96243.06c -- curium 243 at 600K (Cm-243)
+Nuclide  96244.06c -- curium 244 at 600K (Cm-244)
+Nuclide  96245.06c -- curium 245 at 600K (Cm-245)
+Nuclide  96246.06c -- curium 246 at 600K (Cm-246)
+Nuclide  96247.06c -- curium 247 at 600K (Cm-247)
+Nuclide  96248.06c -- curium 248 at 600K (Cm-248)
+Nuclide  96249.06c -- curium 249 at 600K (Cm-249)
+Nuclide  96250.06c -- curium 250 at 600K (Cm-250)
+Nuclide  97249.06c -- berkelium 249 at 600K (Bk-249)
+Nuclide  97250.06c -- berkelium 250 at 600K (Bk-250)
+Nuclide  98249.06c -- californium 249 at 600K (Cf-249)
+Nuclide  98250.06c -- californium 250 at 600K (Cf-250)
+Nuclide  98251.06c -- californium 251 at 600K (Cf-251)
+Nuclide  98252.06c -- californium 252 at 600K (Cf-252)
+Nuclide  98253.06c -- californium 253 at 600K (Cf-253)
+Nuclide  98254.06c -- californium 254 at 600K (Cf-254)
+Nuclide  99253.06c -- einsteinium 253 at 600K (Es-253)
+Nuclide  99254.06c -- einsteinium 254 at 600K (Es-254)
+Nuclide  99255.06c -- einsteinium 255 at 600K (Es-255)
+Nuclide 100255.06c -- fermium 255 at 600K (Fm-255)
+Element   1000.84p -- hydrogen (photon library)
+Element   2000.84p -- helium (photon library)
+Element   5000.84p -- boron (photon library)
+Element   6000.84p -- carbon (photon library)
+Element   9000.84p -- fluorine (photon library)
+Element  10000.84p -- neon (photon library)
+Element  11000.84p -- sodium (photon library)
+Element  12000.84p -- magnesium (photon library)
+Element  13000.84p -- aluminum (photon library)
+Element  14000.84p -- silicon (photon library)
+Element  15000.84p -- phosphorus (photon library)
+Element  16000.84p -- sulfur (photon library)
+Element  17000.84p -- chlorine (photon library)
+Element  18000.84p -- argon (photon library)
+Element  19000.84p -- potassium (photon library)
+Element  20000.84p -- calcium (photon library)
+Element  21000.84p -- scandium (photon library)
+Element  22000.84p -- titanium (photon library)
+Element  23000.84p -- vanadium (photon library)
+Element  24000.84p -- chromium (photon library)
+Element  25000.84p -- manganese (photon library)
+Element  26000.84p -- iron (photon library)
+Element  27000.84p -- cobalt (photon library)
+Element  28000.84p -- nickel (photon library)
+Element  29000.84p -- copper (photon library)
+Element  30000.84p -- zinc (photon library)
+Element  31000.84p -- gallium (photon library)
+Element  32000.84p -- germanium (photon library)
+Element  33000.84p -- arsenic (photon library)
+Element  34000.84p -- selenium (photon library)
+Element  35000.84p -- bromine (photon library)
+Element  36000.84p -- krypton (photon library)
+Element  37000.84p -- rubidium (photon library)
+Element  38000.84p -- strontium (photon library)
+Element  39000.84p -- yttrium (photon library)
+Element  40000.84p -- zirconium (photon library)
+Element  41000.84p -- niobium (photon library)
+Element  42000.84p -- molybdenum (photon library)
+Element  43000.84p -- technetium (photon library)
+Element  44000.84p -- ruthenium (photon library)
+Element  45000.84p -- rhodium (photon library)
+Element  46000.84p -- palladium (photon library)
+Element  47000.84p -- silver (photon library)
+Element  48000.84p -- cadmium (photon library)
+Element  49000.84p -- indium (photon library)
+Element  50000.84p -- tin (photon library)
+Element  51000.84p -- antimony (photon library)
+Element  52000.84p -- tellurium (photon library)
+Element  53000.84p -- iodine (photon library)
+Element  54000.84p -- xenon (photon library)
+Element  55000.84p -- cesium (photon library)
+Element  56000.84p -- barium (photon library)
+Element  57000.84p -- lanthanum (photon library)
+Element  58000.84p -- cerium (photon library)
+Element  59000.84p -- praseodymium (photon library)
+Element  60000.84p -- neodymium (photon library)
+Element  61000.84p -- promethium (photon library)
+Element  62000.84p -- samarium (photon library)
+Element  63000.84p -- europium (photon library)
+Element  64000.84p -- gadolinium (photon library)
+Element  65000.84p -- terbium (photon library)
+Element  66000.84p -- dysprosium (photon library)
+Element  67000.84p -- holmium (photon library)
+Element  68000.84p -- erbium (photon library)
+Element  69000.84p -- thulium (photon library)
+Element  70000.84p -- ytterbium (photon library)
+Element  74000.84p -- tungsten (photon library)
+Element  80000.84p -- mercury (photon library)
+Element  81000.84p -- thallium (photon library)
+Element  82000.84p -- lead (photon library)
+Element  83000.84p -- bismuth (photon library)
+Element  84000.84p -- polonium (photon library)
+Element  85000.84p -- astatine (photon library)
+Element  86000.84p -- radon (photon library)
+Element  87000.84p -- francium (photon library)
+Element  88000.84p -- radium (photon library)
+Element  89000.84p -- actinium (photon library)
+Element  90000.84p -- thorium (photon library)
+Element  91000.84p -- protactinium (photon library)
+Element  92000.84p -- uranium (photon library)
+Element  93000.84p -- neptunium (photon library)
+Element  94000.84p -- plutonium (photon library)
+Element  95000.84p -- americium (photon library)
+Element  96000.84p -- curium (photon library)
+Element  97000.84p -- berkelium (photon library)
+Element  98000.84p -- californium (photon library)
+Element  99000.84p -- einsteinium (photon library)
+
+Implicit photon production mode, data included for 209 nuclides:
+
+  1001.06c -- 1 reaction (H-1)
+  1002.06c -- 1 reaction (H-2)
+  5010.06c -- 38 reactions (B-10)
+  5011.06c -- 30 reactions (B-11)
+  6000.06c -- 4 reactions (C-nat)
+  6000.12c -- 4 reactions (C-nat)
+ 11023.06c -- 294 reactions (Na-23)
+ 11023.12c -- 294 reactions (Na-23)
+ 12024.06c -- 52 reactions (Mg-24)
+ 12025.06c -- 141 reactions (Mg-25)
+ 12026.06c -- 68 reactions (Mg-26)
+ 13027.06c -- 174 reactions (Al-27)
+ 14028.06c -- 275 reactions (Si-28)
+ 14028.12c -- 275 reactions (Si-28)
+ 14029.06c -- 353 reactions (Si-29)
+ 14029.12c -- 353 reactions (Si-29)
+ 14030.06c -- 139 reactions (Si-30)
+ 14030.12c -- 139 reactions (Si-30)
+ 15031.06c -- 4 reactions (P-31)
+ 16032.06c -- 36 reactions (S-32)
+ 16033.06c -- 72 reactions (S-33)
+ 16034.06c -- 26 reactions (S-34)
+ 16036.06c -- 13 reactions (S-36)
+ 17035.06c -- 501 reactions (Cl-35)
+ 17037.06c -- 119 reactions (Cl-37)
+ 19039.06c -- 19 reactions (K-39)
+ 19040.06c -- 24 reactions (K-40)
+ 19041.06c -- 8 reactions (K-41)
+ 20040.06c -- 55 reactions (Ca-40)
+ 20042.06c -- 49 reactions (Ca-42)
+ 20043.06c -- 54 reactions (Ca-43)
+ 20044.06c -- 46 reactions (Ca-44)
+ 20046.06c -- 34 reactions (Ca-46)
+ 21045.06c -- 481 reactions (Sc-45)
+ 22046.06c -- 30 reactions (Ti-46)
+ 22047.06c -- 49 reactions (Ti-47)
+ 22048.06c -- 80 reactions (Ti-48)
+ 22049.06c -- 37 reactions (Ti-49)
+ 22050.06c -- 30 reactions (Ti-50)
+ 23000.06c -- 379 reactions (V-nat)
+ 23000.12c -- 379 reactions (V-nat)
+ 23051.06c -- 52 reactions (V-51)
+ 24000.06c -- 22 reactions (Cr-nat)
+ 24050.06c -- 92 reactions (Cr-50)
+ 24050.12c -- 92 reactions (Cr-50)
+ 24052.06c -- 62 reactions (Cr-52)
+ 24052.12c -- 62 reactions (Cr-52)
+ 24053.06c -- 148 reactions (Cr-53)
+ 24053.12c -- 148 reactions (Cr-53)
+ 24054.06c -- 98 reactions (Cr-54)
+ 24054.12c -- 98 reactions (Cr-54)
+ 25055.06c -- 443 reactions (Mn-55)
+ 25055.12c -- 443 reactions (Mn-55)
+ 26000.06c -- 55 reactions (Fe-nat)
+ 26054.06c -- 66 reactions (Fe-54)
+ 26054.12c -- 66 reactions (Fe-54)
+ 26056.06c -- 381 reactions (Fe-56)
+ 26056.12c -- 381 reactions (Fe-56)
+ 26057.06c -- 134 reactions (Fe-57)
+ 26057.12c -- 134 reactions (Fe-57)
+ 26058.06c -- 148 reactions (Fe-58)
+ 26058.12c -- 148 reactions (Fe-58)
+ 27059.06c -- 92 reactions (Co-59)
+ 28000.06c -- 38 reactions (Ni-nat)
+ 28058.06c -- 284 reactions (Ni-58)
+ 28058.12c -- 284 reactions (Ni-58)
+ 28059.06c -- 2 reactions (Ni-59)
+ 28060.06c -- 190 reactions (Ni-60)
+ 28060.12c -- 190 reactions (Ni-60)
+ 28061.06c -- 112 reactions (Ni-61)
+ 28061.12c -- 112 reactions (Ni-61)
+ 28062.06c -- 105 reactions (Ni-62)
+ 28062.12c -- 105 reactions (Ni-62)
+ 28064.06c -- 42 reactions (Ni-64)
+ 28064.12c -- 42 reactions (Ni-64)
+ 29063.06c -- 515 reactions (Cu-63)
+ 29065.06c -- 498 reactions (Cu-65)
+ 32070.06c -- 676 reactions (Ge-70)
+ 32072.06c -- 464 reactions (Ge-72)
+ 32073.06c -- 284 reactions (Ge-73)
+ 32074.06c -- 249 reactions (Ge-74)
+ 32076.06c -- 204 reactions (Ge-76)
+ 33074.06c -- 811 reactions (As-74)
+ 33075.06c -- 790 reactions (As-75)
+ 36085.06c -- 118 reactions (Kr-85)
+ 37086.06c -- 107 reactions (Rb-86)
+ 38084.06c -- 434 reactions (Sr-84)
+ 39089.06c -- 2 reactions (Y-89)
+ 39090.06c -- 147 reactions (Y-90)
+ 40090.06c -- 325 reactions (Zr-90)
+ 40091.06c -- 39 reactions (Zr-91)
+ 40092.06c -- 143 reactions (Zr-92)
+ 40094.06c -- 53 reactions (Zr-94)
+ 40096.06c -- 33 reactions (Zr-96)
+ 41093.06c -- 2 reactions (Nb-93)
+ 42000.06c -- 2 reactions (Mo-nat)
+ 42092.06c -- 2 reactions (Mo-92)
+ 42092.12c -- 2 reactions (Mo-92)
+ 42094.06c -- 2 reactions (Mo-94)
+ 42094.12c -- 2 reactions (Mo-94)
+ 42095.06c -- 381 reactions (Mo-95)
+ 42095.12c -- 381 reactions (Mo-95)
+ 42096.06c -- 2 reactions (Mo-96)
+ 42096.12c -- 2 reactions (Mo-96)
+ 42097.06c -- 2 reactions (Mo-97)
+ 42097.12c -- 2 reactions (Mo-97)
+ 42098.06c -- 2 reactions (Mo-98)
+ 42098.12c -- 2 reactions (Mo-98)
+ 43099.06c -- 198 reactions (Tc-99)
+ 44101.06c -- 801 reactions (Ru-101)
+ 45103.06c -- 635 reactions (Rh-103)
+ 46102.06c -- 75 reactions (Pd-102)
+ 46104.06c -- 80 reactions (Pd-104)
+ 46105.06c -- 300 reactions (Pd-105)
+ 46106.06c -- 71 reactions (Pd-106)
+ 46108.06c -- 55 reactions (Pd-108)
+ 46110.06c -- 52 reactions (Pd-110)
+ 47109.06c -- 239 reactions (Ag-109)
+ 47111.06c -- 104 reactions (Ag-111)
+ 48106.06c -- 55 reactions (Cd-106)
+ 48111.06c -- 70 reactions (Cd-111)
+ 48315.06c -- 110 reactions (Cd-115m)
+ 50113.06c -- 446 reactions (Sn-113)
+ 50125.06c -- 63 reactions (Sn-125)
+ 51126.06c -- 61 reactions (Sb-126)
+ 52132.06c -- 71 reactions (Te-132)
+ 53127.06c -- 51 reactions (I-127)
+ 53130.06c -- 98 reactions (I-130)
+ 54131.06c -- 293 reactions (Xe-131)
+ 55133.06c -- 110 reactions (Cs-133)
+ 56133.06c -- 249 reactions (Ba-133)
+ 57140.06c -- 116 reactions (La-140)
+ 58138.06c -- 168 reactions (Ce-138)
+ 58139.06c -- 108 reactions (Ce-139)
+ 58143.06c -- 282 reactions (Ce-143)
+ 59141.06c -- 89 reactions (Pr-141)
+ 59142.06c -- 149 reactions (Pr-142)
+ 60142.06c -- 126 reactions (Nd-142)
+ 60143.06c -- 121 reactions (Nd-143)
+ 60144.06c -- 209 reactions (Nd-144)
+ 60145.06c -- 267 reactions (Nd-145)
+ 60146.06c -- 154 reactions (Nd-146)
+ 60147.06c -- 379 reactions (Nd-147)
+ 60148.06c -- 112 reactions (Nd-148)
+ 60150.06c -- 122 reactions (Nd-150)
+ 61151.06c -- 130 reactions (Pm-151)
+ 62144.06c -- 75 reactions (Sm-144)
+ 62147.06c -- 245 reactions (Sm-147)
+ 62148.06c -- 222 reactions (Sm-148)
+ 62149.06c -- 683 reactions (Sm-149)
+ 62150.06c -- 674 reactions (Sm-150)
+ 62151.06c -- 365 reactions (Sm-151)
+ 62152.06c -- 696 reactions (Sm-152)
+ 62153.06c -- 120 reactions (Sm-153)
+ 62154.06c -- 184 reactions (Sm-154)
+ 63153.06c -- 427 reactions (Eu-153)
+ 63157.06c -- 233 reactions (Eu-157)
+ 64152.06c -- 560 reactions (Gd-152)
+ 64153.06c -- 546 reactions (Gd-153)
+ 64154.06c -- 896 reactions (Gd-154)
+ 64155.06c -- 825 reactions (Gd-155)
+ 64156.06c -- 790 reactions (Gd-156)
+ 64157.06c -- 470 reactions (Gd-157)
+ 64158.06c -- 254 reactions (Gd-158)
+ 64160.06c -- 194 reactions (Gd-160)
+ 65160.06c -- 188 reactions (Tb-160)
+ 66156.06c -- 242 reactions (Dy-156)
+ 66158.06c -- 350 reactions (Dy-158)
+ 66160.06c -- 227 reactions (Dy-160)
+ 66161.06c -- 348 reactions (Dy-161)
+ 66162.06c -- 499 reactions (Dy-162)
+ 66163.06c -- 251 reactions (Dy-163)
+ 66164.06c -- 318 reactions (Dy-164)
+ 67165.06c -- 5 reactions (Ho-165)
+ 67366.06c -- 149 reactions (Ho-166m)
+ 68162.06c -- 93 reactions (Er-162)
+ 68164.06c -- 60 reactions (Er-164)
+ 68166.06c -- 340 reactions (Er-166)
+ 68167.06c -- 193 reactions (Er-167)
+ 68168.06c -- 494 reactions (Er-168)
+ 68170.06c -- 83 reactions (Er-170)
+ 74000.06c -- 4 reactions (W-nat)
+ 74000.12c -- 4 reactions (W-nat)
+ 90232.06c -- 167 reactions (Th-232)
+ 91231.06c -- 365 reactions (Pa-231)
+ 91233.06c -- 65 reactions (Pa-233)
+ 92232.06c -- 6 reactions (U-232)
+ 92233.06c -- 11 reactions (U-233)
+ 92234.06c -- 6 reactions (U-234)
+ 92235.06c -- 33 reactions (U-235)
+ 92236.06c -- 6 reactions (U-236)
+ 92237.06c -- 3 reactions (U-237)
+ 92238.06c -- 6 reactions (U-238)
+ 92239.06c -- 3 reactions (U-239)
+ 92240.06c -- 6 reactions (U-240)
+ 92241.06c -- 3 reactions (U-241)
+ 93237.06c -- 269 reactions (Np-237)
+ 94239.06c -- 14 reactions (Pu-239)
+ 94240.06c -- 16 reactions (Pu-240)
+ 94241.06c -- 3 reactions (Pu-241)
+ 94242.06c -- 3 reactions (Pu-242)
+ 94243.06c -- 3 reactions (Pu-243)
+ 95241.06c -- 54 reactions (Am-241)
+ 95243.06c -- 3 reactions (Am-243)
+ 96242.06c -- 3 reactions (Cm-242)
+ 96248.06c -- 3 reactions (Cm-248)
+ 98250.06c -- 3 reactions (Cf-250)
+ 98251.06c -- 3 reactions (Cf-251)
+ 98252.06c -- 3 reactions (Cf-252)
+
+Photon production data not available for:
+
+  1003.06c (H-3)
+  2003.06c (He-3)
+  2004.06c (He-4)
+ 18036.06c (Ar-36)
+ 18038.06c (Ar-38)
+ 18040.06c (Ar-40)
+ 27058.06c (Co-58)
+ 30064.06c (Zn-64)
+ 31069.06c (Ga-69)
+ 31071.06c (Ga-71)
+ 34074.06c (Se-74)
+ 34076.06c (Se-76)
+ 34077.06c (Se-77)
+ 34078.06c (Se-78)
+ 34079.06c (Se-79)
+ 34080.06c (Se-80)
+ 34082.06c (Se-82)
+ 35079.06c (Br-79)
+ 35081.06c (Br-81)
+ 36078.06c (Kr-78)
+ 36080.06c (Kr-80)
+ 36082.06c (Kr-82)
+ 36083.06c (Kr-83)
+ 36084.06c (Kr-84)
+ 36086.06c (Kr-86)
+ 37085.06c (Rb-85)
+ 37087.06c (Rb-87)
+ 38086.06c (Sr-86)
+ 38087.06c (Sr-87)
+ 38088.06c (Sr-88)
+ 38089.06c (Sr-89)
+ 38090.06c (Sr-90)
+ 39091.06c (Y-91)
+ 40093.06c (Zr-93)
+ 40095.06c (Zr-95)
+ 41094.06c (Nb-94)
+ 41095.06c (Nb-95)
+ 42099.06c (Mo-99)
+ 42100.06c (Mo-100)
+ 42100.12c (Mo-100)
+ 44098.06c (Ru-98)
+ 44099.06c (Ru-99)
+ 44100.06c (Ru-100)
+ 44102.06c (Ru-102)
+ 44103.06c (Ru-103)
+ 44104.06c (Ru-104)
+ 44105.06c (Ru-105)
+ 44106.06c (Ru-106)
+ 45105.06c (Rh-105)
+ 46107.06c (Pd-107)
+ 47107.06c (Ag-107)
+ 47310.06c (Ag-110m)
+ 48108.06c (Cd-108)
+ 48110.06c (Cd-110)
+ 48112.06c (Cd-112)
+ 48113.06c (Cd-113)
+ 48114.06c (Cd-114)
+ 48116.06c (Cd-116)
+ 49113.06c (In-113)
+ 49115.06c (In-115)
+ 50112.06c (Sn-112)
+ 50114.06c (Sn-114)
+ 50115.06c (Sn-115)
+ 50116.06c (Sn-116)
+ 50117.06c (Sn-117)
+ 50118.06c (Sn-118)
+ 50119.06c (Sn-119)
+ 50120.06c (Sn-120)
+ 50122.06c (Sn-122)
+ 50123.06c (Sn-123)
+ 50124.06c (Sn-124)
+ 50126.06c (Sn-126)
+ 51121.06c (Sb-121)
+ 51123.06c (Sb-123)
+ 51124.06c (Sb-124)
+ 51125.06c (Sb-125)
+ 52120.06c (Te-120)
+ 52122.06c (Te-122)
+ 52123.06c (Te-123)
+ 52124.06c (Te-124)
+ 52125.06c (Te-125)
+ 52126.06c (Te-126)
+ 52327.06c (Te-127m)
+ 52128.06c (Te-128)
+ 52329.06c (Te-129m)
+ 52130.06c (Te-130)
+ 53129.06c (I-129)
+ 53131.06c (I-131)
+ 53135.06c (I-135)
+ 54126.06c (Xe-126)
+ 54128.06c (Xe-128)
+ 54129.06c (Xe-129)
+ 54130.06c (Xe-130)
+ 54132.06c (Xe-132)
+ 54133.06c (Xe-133)
+ 54134.06c (Xe-134)
+ 54135.06c (Xe-135)
+ 54136.06c (Xe-136)
+ 55134.06c (Cs-134)
+ 55135.06c (Cs-135)
+ 55136.06c (Cs-136)
+ 55137.06c (Cs-137)
+ 56132.06c (Ba-132)
+ 56134.06c (Ba-134)
+ 56135.06c (Ba-135)
+ 56136.06c (Ba-136)
+ 56137.06c (Ba-137)
+ 56138.06c (Ba-138)
+ 56140.06c (Ba-140)
+ 57138.06c (La-138)
+ 57139.06c (La-139)
+ 58140.06c (Ce-140)
+ 58141.06c (Ce-141)
+ 58142.06c (Ce-142)
+ 58144.06c (Ce-144)
+ 59143.06c (Pr-143)
+ 61147.06c (Pm-147)
+ 61148.06c (Pm-148)
+ 61348.06c (Pm-148m)
+ 61149.06c (Pm-149)
+ 63151.06c (Eu-151)
+ 63152.06c (Eu-152)
+ 63154.06c (Eu-154)
+ 63155.06c (Eu-155)
+ 63156.06c (Eu-156)
+ 65159.06c (Tb-159)
+ 88223.06c (Ra-223)
+ 88224.06c (Ra-224)
+ 88225.06c (Ra-225)
+ 88226.06c (Ra-226)
+ 89225.06c (Ac-225)
+ 89226.06c (Ac-226)
+ 89227.06c (Ac-227)
+ 90227.06c (Th-227)
+ 90228.06c (Th-228)
+ 90229.06c (Th-229)
+ 90230.06c (Th-230)
+ 90233.06c (Th-233)
+ 90234.06c (Th-234)
+ 91232.06c (Pa-232)
+ 93235.06c (Np-235)
+ 93236.06c (Np-236)
+ 93238.06c (Np-238)
+ 93239.06c (Np-239)
+ 94236.06c (Pu-236)
+ 94237.06c (Pu-237)
+ 94238.06c (Pu-238)
+ 94244.06c (Pu-244)
+ 94246.06c (Pu-246)
+ 95242.06c (Am-242)
+ 95342.06c (Am-242m)
+ 95244.06c (Am-244)
+ 95344.06c (Am-244m)
+ 96240.06c (Cm-240)
+ 96241.06c (Cm-241)
+ 96243.06c (Cm-243)
+ 96244.06c (Cm-244)
+ 96245.06c (Cm-245)
+ 96246.06c (Cm-246)
+ 96247.06c (Cm-247)
+ 96249.06c (Cm-249)
+ 96250.06c (Cm-250)
+ 97249.06c (Bk-249)
+ 97250.06c (Bk-250)
+ 98249.06c (Cf-249)
+ 98253.06c (Cf-253)
+ 98254.06c (Cf-254)
+ 99253.06c (Es-253)
+ 99254.06c (Es-254)
+ 99255.06c (Es-255)
+100255.06c (Fm-255)
+
+SUMMARY -- 1469 nuclides included in calculation:
+
+ - 380 transport nuclides
+ - 1002 decay nuclides (not listed above)
+ - 87 elements with photon interaction data
+ - Neutron energy cut-offs at 1.00E-05 and 10.0 MeV
+ - Photon energy cut-offs at 1.00E-03 and 100.0 MeV
+ - 9395 transport reactions
+ - 4305 special reactions
+ - 1638 decay reactions + 106 branches
+ - 2105 transmutation reactions + 1706 branches
+ - 1.15 Gb of memory allocated for data
+
+Normalizing compositions and processing mixtures...
+OK.
+
+Setting nuclide compositions for burnable materials...
+OK.
+
+Allocating memory for burnup calculation...
+OK.
+
+Allocating memory for macroscopic cross section data...
+OK.
+
+Processing response functions for photon dose rates...
+OK.
+
+Processing electron data:
+
+ - reading bremsstrahlung cross section data...
+ - reading ground state configuration data...
+ - processing input options...
+ - processing element data...
+ - processing material data...
+ - processing TTB data...
+OK.
+
+Processing atomic relaxation data...
+ - 4537 radiative transitions (fluorescence)
+ - 58708 non-radiative transitions (Auger electrons)
+OK.
+
+Allocating memory for particle structures...
+OK.
+
+Calculating maximum densities...
+OK.
+
+Performing density cut-off...
+OK.
+
+Sorting material-wise reaction lists:
+
+   0% complete
+  13% complete
+  32% complete
+  44% complete
+  66% complete
+ 100% complete
+
+Waiting for results from other MPI tasks...
+OK.
+
+Calculating DT neutron majorant cross section:
+
+   0% complete
+  26% complete
+  54% complete
+  82% complete
+  93% complete
+ 100% complete
+
+Calculating DT photon majorant cross section...
+OK.
+
+Calculating activities...
+OK.
+
+Setting photon energy cutoffs...
+                    Material  Cutoff energy (MeV)  Mean free path (cm)
+                Batch7Axial1         1.000000E-03         1.657342E-05
+                Batch7Axial2         1.000000E-03         1.660859E-05
+                Batch7Axial3         1.000000E-03         1.664509E-05
+                Batch7Axial4         1.000000E-03         1.667814E-05
+                Batch7Axial5         1.000000E-03         1.670566E-05
+                Batch7Axial6         1.000000E-03         1.673151E-05
+                Batch7Axial7         1.000000E-03         1.675113E-05
+                Batch7Axial8         1.000000E-03         1.672534E-05
+                Batch7Axial9         1.000000E-03         1.670943E-05
+                Batch3Axial1         1.000000E-03         1.655123E-05
+                Batch3Axial2         1.000000E-03         1.651567E-05
+                Batch3Axial3         1.000000E-03         1.644415E-05
+                Batch3Axial4         1.000000E-03         1.640012E-05
+                Batch3Axial5         1.000000E-03         1.641600E-05
+                Batch3Axial6         1.000000E-03         1.649890E-05
+                Batch3Axial7         1.000000E-03         1.662231E-05
+                Batch3Axial8         1.000000E-03         1.668379E-05
+                Batch3Axial9         1.000000E-03         1.670170E-05
+                Batch2Axial1         1.000000E-03         1.655769E-05
+                Batch2Axial2         1.000000E-03         1.654173E-05
+                Batch2Axial3         1.000000E-03         1.649510E-05
+                Batch2Axial4         1.000000E-03         1.646445E-05
+                Batch2Axial5         1.000000E-03         1.648073E-05
+                Batch2Axial6         1.000000E-03         1.655405E-05
+                Batch2Axial7         1.000000E-03         1.665635E-05
+                Batch2Axial8         1.000000E-03         1.669564E-05
+                Batch2Axial9         1.000000E-03         1.670381E-05
+                Batch4Axial1         1.000000E-03         1.656169E-05
+                Batch4Axial2         1.000000E-03         1.655743E-05
+                Batch4Axial3         1.000000E-03         1.652593E-05
+                Batch4Axial4         1.000000E-03         1.650297E-05
+                Batch4Axial5         1.000000E-03         1.652180E-05
+                Batch4Axial6         1.000000E-03         1.659039E-05
+                Batch4Axial7         1.000000E-03         1.667886E-05
+                Batch4Axial8         1.000000E-03         1.670322E-05
+                Batch4Axial9         1.000000E-03         1.670519E-05
+                Batch1Axial1         1.000000E-03         1.656800E-05
+                Batch1Axial2         1.000000E-03         1.658576E-05
+                Batch1Axial3         1.000000E-03         1.659199E-05
+                Batch1Axial4         1.000000E-03         1.659993E-05
+                Batch1Axial5         1.000000E-03         1.662323E-05
+                Batch1Axial6         1.000000E-03         1.666818E-05
+                Batch1Axial7         1.000000E-03         1.671858E-05
+                Batch1Axial8         1.000000E-03         1.671506E-05
+                Batch1Axial9         1.000000E-03         1.670737E-05
+                Batch5Axial1         1.000000E-03         1.657068E-05
+                Batch5Axial2         1.000000E-03         1.659722E-05
+                Batch5Axial3         1.000000E-03         1.661835E-05
+                Batch5Axial4         1.000000E-03         1.663818E-05
+                Batch5Axial5         1.000000E-03         1.666335E-05
+                Batch5Axial6         1.000000E-03         1.669933E-05
+                Batch5Axial7         1.000000E-03         1.673496E-05
+                Batch5Axial8         1.000000E-03         1.672013E-05
+                Batch5Axial9         1.000000E-03         1.670833E-05
+                Batch6Axial1         1.000000E-03         1.657232E-05
+                Batch6Axial2         1.000000E-03         1.660415E-05
+                Batch6Axial3         1.000000E-03         1.663471E-05
+                Batch6Axial4         1.000000E-03         1.666263E-05
+                Batch6Axial5         1.000000E-03         1.668913E-05
+                Batch6Axial6         1.000000E-03         1.671904E-05
+                Batch6Axial7         1.000000E-03         1.674486E-05
+                Batch6Axial8         1.000000E-03         1.672327E-05
+                Batch6Axial9         1.000000E-03         1.670896E-05
+         belowcorecoolantmat         1.000000E-03         1.769820E-03
+ belowcoreradialreflectormat         1.000000E-03         3.745088E-05
+    belowcoreradialshieldmat         1.000000E-03         1.512368E-04
+ abovecoreradialreflectormat         1.000000E-03         3.761974E-05
+    abovecoreradialshieldmat         1.000000E-03         1.518091E-04
+         radialreflectormat0         1.000000E-03         3.745088E-05
+         radialreflectormat1         1.000000E-03         3.746198E-05
+         radialreflectormat2         1.000000E-03         3.748135E-05
+         radialreflectormat3         1.000000E-03         3.750632E-05
+         radialreflectormat4         1.000000E-03         3.753476E-05
+         radialreflectormat5         1.000000E-03         3.756349E-05
+         radialreflectormat6         1.000000E-03         3.758855E-05
+         radialreflectormat7         1.000000E-03         3.760829E-05
+         radialreflectormat8         1.000000E-03         3.761974E-05
+            radialshieldmat0         1.000000E-03         1.512368E-04
+            radialshieldmat1         1.000000E-03         1.512751E-04
+            radialshieldmat2         1.000000E-03         1.513406E-04
+            radialshieldmat3         1.000000E-03         1.514243E-04
+            radialshieldmat4         1.000000E-03         1.515218E-04
+            radialshieldmat5         1.000000E-03         1.516187E-04
+            radialshieldmat6         1.000000E-03         1.517038E-04
+            radialshieldmat7         1.000000E-03         1.517713E-04
+            radialshieldmat8         1.000000E-03         1.518091E-04
+           outsidecoolantmat         1.000000E-03         1.807562E-03
+           uppergasplenummat         1.000000E-03         7.781611E-05
+         abovecorecoolantmat         1.000000E-03         1.846950E-03
+             CR_non_inserted         1.000000E-03         1.411250E-04
+OK.
+
+Clearing results and statistics...
+OK.
+
+Sampling initial source...
+OK.
+
+Inactive cycle   1 /  40: k-eff = 1.00000
+Inactive cycle   2 /  40: k-eff = 0.60103
+Inactive cycle   3 /  40: k-eff = 0.78026
+Inactive cycle   4 /  40: k-eff = 0.87300
+Inactive cycle   5 /  40: k-eff = 0.91988
+Inactive cycle   6 /  40: k-eff = 0.94350
+Inactive cycle   7 /  40: k-eff = 0.96293
+Inactive cycle   8 /  40: k-eff = 0.96457
+Inactive cycle   9 /  40: k-eff = 0.96854
+Inactive cycle  10 /  40: k-eff = 0.97285
+Inactive cycle  11 /  40: k-eff = 0.97232
+Inactive cycle  12 /  40: k-eff = 0.97844
+Inactive cycle  13 /  40: k-eff = 0.98343
+Inactive cycle  14 /  40: k-eff = 0.98211
+Inactive cycle  15 /  40: k-eff = 0.98006
+Inactive cycle  16 /  40: k-eff = 0.97227
+Inactive cycle  17 /  40: k-eff = 0.97920
+Inactive cycle  18 /  40: k-eff = 0.97774
+Inactive cycle  19 /  40: k-eff = 0.98127
+Inactive cycle  20 /  40: k-eff = 0.98621
+Inactive cycle  21 /  40: k-eff = 0.97078
+Inactive cycle  22 /  40: k-eff = 0.98458
+Inactive cycle  23 /  40: k-eff = 0.97800
+Inactive cycle  24 /  40: k-eff = 0.97785
+Inactive cycle  25 /  40: k-eff = 0.98452
+Inactive cycle  26 /  40: k-eff = 0.98157
+Inactive cycle  27 /  40: k-eff = 0.98465
+Inactive cycle  28 /  40: k-eff = 0.97784
+Inactive cycle  29 /  40: k-eff = 0.98753
+Inactive cycle  30 /  40: k-eff = 0.97401
+
+***** Mon May  7 13:56:46 2018:
+
+ - MPI task         = 1
+ - OpenMP thread    = 7
+ - RNG parent seed  = 1525725872
+ - RNG history seed = 5039145790078696112
+
+***** Mon May  7 13:56:46 2018:
+
+ - MPI task         = 1
+ - OpenMP thread    = 18
+ - RNG parent seed  = 1525725872
+ - RNG history idx  = 199992
+
+Fatal error in function Tracking:
+
+ - RNG history seed = 1642790135870765744
+ - RNG history idx  = 199998
+
+Fatal error in function Tracking:
+
+Error in mpi modeError in mpi mode
+
+Simulation aborted.
+
+
+
+Simulation aborted.
+
+
+***** Mon May  7 13:56:46 2018:
+
+ - MPI task         = 3
+ - OpenMP thread    = 7
+ - RNG parent seed  = 1525725872
+
+***** Mon May  7 13:56:46 2018:
+
+ - MPI task         = 3
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1525725872
+ - RNG history seed = 14519289965268810416
+ - RNG history idx  = 399974
+
+Fatal error in function Tracking:
+
+ - RNG history seed = 12269518460192012976
+Error in mpi mode
+
+Simulation aborted.
+
+ - RNG history idx  = 399987
+
+Fatal error in function Tracking:
+
+Error in mpi mode
+
+Simulation aborted.
+
+
+***** Mon May  7 13:56:48 2018:
+
+ - MPI task         = 2
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1525725872
+ - RNG history seed = 6698612892242983600
+ - RNG history idx  = 299996
+
+Fatal error in function Tracking:
+
+Error in mpi mode
+
+Simulation aborted.
+
+
+***** Mon May  7 13:56:48 2018:
+
+ - MPI task         = 2
+ - OpenMP thread    = 13
+ - RNG parent seed  = 1525725872
+ - RNG history seed = 18340923061035252400
+ - RNG history idx  = 299968
+
+Fatal error in function Tracking:
+
+Error in mpi mode
+
+Simulation aborted.
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[20239,1],1]
+  Exit code:    255
+--------------------------------------------------------------------------

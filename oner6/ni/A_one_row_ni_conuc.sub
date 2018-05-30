@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#SBATCH --job-name=A_or_ni
+
+#SBATCH --output=A_or_ni.o
+
+#SBATCH --error=A_or_ni.error
+
+#SBATCH --partition=savio
+
+#SBATCH --time=400:00:00
+
+#SBATCH --nodes=4
+
+#Sbatch --ntasks-per-node=1
+
+#SBATCH--cpus-per-task=20
+
+# QoS: 
+
+#SBATCH --qos=nuclear_savio_normal
+
+#
+
+# Account:
+
+#SBATCH -A co_nuclear
+
+#SBATCH --mail-user=yves.robert@insa-lyon.fr
+#SBATCH --mail-type=all
+
+# run command
+#LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/global/home/groups/co_nuclear/gd_library/code/lib/:/lib64
+#export LD_LIBRARY_PATH
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+mkdir -p /global/scratch/$USER/$SLURM_JOB_ID
+mpirun -np 4 --map-by ppr:1:node:pe=20 /global/home/users/yvesrobert/serp2/sss2 -omp 24 A_one_row_ni
+

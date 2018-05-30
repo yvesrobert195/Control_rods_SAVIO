@@ -1,0 +1,2 @@
+/var/spool/slurmd/job2973392/slurm_script: line 33: setenv: command not found
+slurmstepd: error: *** JOB 2973392 ON n0067.savio2 CANCELLED AT 2018-05-03T15:50:04 ***
