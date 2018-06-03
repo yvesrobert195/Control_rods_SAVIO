@@ -34484,3 +34484,49 @@ k-eff (collision) = 0.98423 +/- 0.00039  [0.98347  0.98499]
 
 (O1) (N/P) (MPI=12) (OMP=20) (CE) 
 ------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.30 -- Static criticality source simulation
+
+Input file: "A_two_rows3_ni" 
+
+Transport calculation: step = 3 / 4 
+                       BU   = 12.20 MWd/kgU
+                       time = 3.05 years
+
+Active cycle  310 / 520  Source neutrons : 50672
+
+Running time :                 20:17:44
+Estimated running time :       23:15:27  31:08:20
+Estimated running time left :   2:57:43  10:50:35
+
+Estimated relative CPU usage :   998.6%
+
+k-eff (analog)    = 0.98420 +/- 0.00041  [0.98340  0.98500]
+k-eff (collision) = 0.98423 +/- 0.00039  [0.98347  0.98499]
+
+(O1) (N/P) (MPI=12) (OMP=20) (CE) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.30 -- Static criticality source simulation
+
+Input file: "A_two_rows3_ni" 
+
+Transport calculation: step = 3 / 4 
+                       BU   = 12.20 MWd/kgU
+                       time = 3.05 years
+
+Active cycle  311 / 520  Source neutrons : 50104
+
+Running time :                 20:18:35
+Estimated running time :       23:15:27  31:08:20
+Estimated running time left :   2:56:52  10:49:45
+
+Estimated relative CPU usage :   998.4%
+
+k-eff (analog)    = 0.98420 +/- 0.00041  [0.98340  0.98500]
+k-eff (collision) = 0.98423 +/- 0.00039  [0.98347  0.98499]
+
+(O1) (N/P) (MPI=12) (OMP=20) (CE) 
+------------------------------------------------------------
