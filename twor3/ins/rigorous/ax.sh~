@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# run command
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+nc=4
+for ax in {1..9..1}
+do
+	cp A_one_row A_one_row_0_$ax
+	printf '%s\n' $(($nc*$ax)) '? 0000 ?s// 0001 /' wq | ex -s A_one_row_0_$ax
+	mpirun -np 1 sss2 -omp 20 A_one_row_0_$ax
+done

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {0..3..1}
+for i in {2..3..1}
 do
     echo "Test #$i"
     cp A_one_row A_one_row$i
